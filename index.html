@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>InnovateX 2026: Build one real hardware product, funded · Project GRID × CMF, IIT Delhi</title>
+<meta name="description" content="InnovateX 2026: thirty Indian students each take one hardware product from concept to a working unit. Funded end to end, built at IIT Delhi's Central Manufacturing Facility, exhibited 19 September 2026." />
+<meta property="og:title" content="InnovateX 2026: Build one real hardware product" />
+<meta property="og:description" content="Thirty students. One funded build each, made at IIT Delhi's CMF and exhibited 19 September 2026." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFFFFF'/%3E%3Cline x1='24' y1='22' x2='78' y2='78' stroke='%2316273C' stroke-width='15'/%3E%3Cline x1='78' y1='22' x2='24' y2='78' stroke='%2316B6EA' stroke-width='15'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script>
+  (function(){ var r=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!r){ document.documentElement.classList.add('anim'); window.__af=setTimeout(function(){document.documentElement.classList.remove('anim');},2800); } })();
+</script>
+<style>
+  :root{
+    --paper:#FFFFFF; --grey:#F3F5F8; --grey-2:#E9EDF2; --grey-3:#DCE3EB; --icy:#E7F4FB;
+    --navy:#13243A; --ink:#17273C; --ink-2:#52637A; --ink-3:#8893A2;
+    --line:rgba(19,36,58,.10); --line-2:rgba(19,36,58,.16);
+    --cyan:#0096D8; --cyan-deep:#007BBE; --cyan-bright:#16B6EA;
+    --t-d:#EAF1F8; --t-d2:#A2B4C9;
+    --font:"Untitled Sans","Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+    --enter:cubic-bezier(.16,.84,.34,1); --standard:cubic-bezier(.2,0,0,1);
+    --nav-h:66px; --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav-h) + 14px)}
+  html:not(.anim){scroll-behavior:smooth}
+  body{font-family:var(--font);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  ::selection{background:var(--cyan);color:#fff}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:3px}
+  .skip{position:absolute;left:-9999px;top:8px;z-index:300;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}
+  .skip:focus{left:14px}
+
+  h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.04;color:var(--navy)}
+  h2{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.03em;line-height:1.03}
+  h3{font-size:1.16rem;font-weight:700;letter-spacing:-.02em;line-height:1.22;color:var(--navy)}
+  .lead{font-size:clamp(1.05rem,1.55vw,1.22rem);color:var(--ink-2);max-width:60ch;line-height:1.55}
+  .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan-deep);display:inline-flex;align-items:center;gap:.6em}
+  .eyebrow::before{content:"";width:24px;height:1px;background:currentColor;opacity:.7}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* logo */
+  .logo{display:inline-flex;align-items:baseline;gap:.04em;font-weight:800;letter-spacing:-.045em;color:var(--navy);line-height:1;white-space:nowrap}
+  .logo .lx{display:inline-block;height:.82em;width:auto;align-self:baseline;transform:translateY(.025em)}
+  .logo .lx .nv{fill:#293F54} .logo .lx .cy{fill:#04AAD6}
+
+  /* nav */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;background:rgba(255,255,255,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s var(--standard),background .3s var(--standard)}
+  header.nav.scrolled{border-bottom-color:var(--line);background:rgba(255,255,255,.93)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+  .nav .logo{font-size:1.22rem;min-height:44px}
+  .navlinks{display:flex;align-items:center;gap:30px}
+  .navlinks a:not(.btn){font-size:.88rem;font-weight:500;color:var(--ink-2);transition:color .15s var(--standard);padding:6px 0;position:relative}
+  .navlinks a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--standard)}
+  .navlinks a:not(.btn):hover{color:var(--navy)} .navlinks a:not(.btn):hover::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-weight:700;font-size:.94rem;letter-spacing:-.01em;padding:11px 22px;border-radius:100px;cursor:pointer;border:1.5px solid transparent;min-height:44px;transition:background .15s var(--standard),transform .12s var(--standard),border-color .15s var(--standard),box-shadow .2s var(--standard)}
+  .btn-primary{background:var(--cyan);color:#fff;box-shadow:0 6px 18px rgba(0,150,216,.28)}
+  .btn-primary:hover{background:var(--cyan-deep);box-shadow:0 10px 26px rgba(0,150,216,.36)}
+  .btn-primary:active{transform:scale(.97)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line-2)}
+  .btn-ghost:hover{border-color:var(--navy)}
+  .btn .arr{transition:transform .15s var(--standard)}
+  .btn:hover .arr{transform:translateX(3px)}
+  .navtoggle{display:none;background:none;border:0;cursor:pointer;padding:10px;flex-direction:column;gap:5px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+  .navtoggle span{display:block;width:22px;height:2px;background:var(--navy);transition:.25s var(--standard)}
+
+  /* hero */
+  .hero{position:relative;background:var(--paper);overflow:hidden;padding:calc(var(--nav-h) + 64px) 0 64px;min-height:100svh;display:flex;align-items:center;text-align:center}
+  .hero::after{content:"";position:absolute;left:50%;bottom:0;width:150%;height:44%;transform:translateX(-50%);background:var(--grey);z-index:0;clip-path:ellipse(58% 100% at 50% 100%);opacity:.55}
+  .hero .wrap{position:relative;z-index:2;width:100%}
+  .hero-eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+  .hero-eyebrow b{color:var(--cyan-deep)}
+  .hero-logo{margin:22px auto 0;display:flex;justify-content:center}
+  .hero-logo .logo{font-size:clamp(3rem,9.5vw,7rem)}
+  .hero h1{font-size:clamp(1.55rem,3vw,2.4rem);font-weight:700;letter-spacing:-.025em;line-height:1.14;color:var(--navy);max-width:21ch;margin:26px auto 0}
+  .hero h1 em{font-style:normal;color:var(--cyan-deep)}
+  .hero .sub{margin:18px auto 0;max-width:54ch;color:var(--ink-2);font-size:clamp(1.02rem,1.4vw,1.15rem)}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+  .trust{margin-top:46px;display:flex;flex-direction:column;align-items:center;gap:18px}
+  .trust .tl{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+  .chips{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 20px;height:64px;display:flex;align-items:center;box-shadow:0 4px 16px rgba(19,36,58,.06);transition:transform .25s var(--standard),box-shadow .25s var(--standard)}
+  .chip:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(19,36,58,.10)}
+  .chip img{height:38px;width:auto;object-fit:contain}
+  .chip.grid img{height:32px}
+
+  /* co-organiser logo lockup (replaces text eyebrow) */
+  .orgs{display:flex;flex-direction:column;align-items:center;gap:20px}
+  .orgs-label{font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+  .orgs-row{display:flex;align-items:center;gap:30px;flex-wrap:wrap;justify-content:center}
+  .orglock{display:flex;align-items:center;gap:28px}
+  .orglock img{height:54px;width:auto;object-fit:contain;display:block}
+  .orglock .gridimg{height:58px}
+  .orglock .div{width:1px;height:48px;background:var(--line-2)}
+  .orgs-row .amp{color:var(--ink-3);font-weight:600;font-size:1.3rem}
+
+  .fx{will-change:transform,opacity}
+  .anim .fx{opacity:0}
+  .anim .reveal{opacity:0}
+
+  /* sections */
+  section{padding:clamp(66px,8vw,120px) 0;position:relative}
+  .s-paper{background:var(--paper)} .s-grey{background:var(--grey)} .s-icy{background:var(--icy)}
+  .s-navy{background:var(--navy);color:var(--t-d)}
+  .s-navy h2,.s-navy h3{color:#fff}.s-navy .lead{color:var(--t-d2)}.s-navy .eyebrow{color:var(--cyan-bright)}
+  .head{max-width:700px}.head .eyebrow{margin-bottom:18px}.head .lead{margin-top:18px}
+  .reveal-mask{overflow:hidden;display:block}
+
+  /* image placeholder */
+  .ph{position:relative;background:linear-gradient(135deg,var(--grey) 0%,var(--grey-2) 100%);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--ink-3);min-height:160px}
+  .ph::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 11px,rgba(19,36,58,.022) 11px,rgba(19,36,58,.022) 22px);pointer-events:none}
+  .ph svg{width:30px;height:30px;stroke:var(--ink-3);fill:none;stroke-width:1.6;opacity:.7}
+  .ph .cap{font-size:.74rem;letter-spacing:.04em;font-weight:600;color:var(--ink-3)}
+  .ph.cyan{background:linear-gradient(135deg,#E7F4FB 0%,#D3ECF8 100%);border-color:rgba(0,150,216,.18)}
+  .ph.cyan svg,.ph.cyan .cap{stroke:var(--cyan-deep);color:var(--cyan-deep)}
+
+  /* credibility band */
+  .cred{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 18px 50px rgba(19,36,58,.06)}
+  .cred .c{padding:38px 26px;border-right:1px solid var(--line)}
+  .cred .c:last-child{border-right:0}
+  .cred .v{font-size:clamp(2.3rem,4.6vw,3.4rem);font-weight:800;letter-spacing:-.04em;line-height:.9;color:var(--navy)}
+  .cred .v em{font-style:normal;color:var(--cyan)}
+  .cred .l{margin-top:12px;font-size:.92rem;color:var(--ink-2);max-width:22ch}
+
+  /* PROBLEM: cinematic "three ideas die, one lives" */
+  .problem{text-align:center;background:var(--paper);padding:0;overflow:hidden}
+  .problem-pin{min-height:100svh;display:flex;align-items:center}
+  .problem .wrap{width:100%}
+  .problem .kick{color:var(--ink-3);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;margin-bottom:46px}
+  .death-stack{display:flex;flex-direction:column;gap:22px;align-items:center}
+  .death{display:flex;align-items:center;gap:20px;justify-content:center;will-change:transform,opacity}
+  .death-ic{width:48px;height:48px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:13px;background:var(--grey);border:1px solid var(--line)}
+  .death-ic svg{width:25px;height:25px;stroke:var(--ink-2);fill:none;stroke-width:1.7}
+  .death-tx{position:relative;font-size:clamp(1.5rem,4.4vw,2.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;color:var(--navy);white-space:nowrap}
+  .death-tx .strike{position:absolute;left:-6px;right:-6px;top:55%;height:4px;background:#C2CAD4;transform:scaleX(0);transform-origin:left center;border-radius:4px}
+  .problem .turn{display:inline-block;position:relative;font-size:clamp(2rem,6.4vw,4.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.04;color:var(--navy);margin-top:46px}
+  .problem .turn em{font-style:normal;color:var(--cyan)}
+  .problem .turn .ul{position:absolute;left:0;right:0;bottom:-12px;height:6px;background:var(--cyan);transform:scaleX(0);transform-origin:left center;border-radius:5px}
+  .anim .problem .kick,.anim .death,.anim .problem .turn{opacity:0}
+
+  /* connecting spine through the 01-02-03 sequence */
+  .deflist-wrap{position:relative}
+  .deflist-wrap .spine{position:absolute;left:7px;top:9px;bottom:36px;width:2px;background:linear-gradient(var(--cyan-bright),var(--cyan));transform:scaleY(0);transform-origin:top center;border-radius:2px}
+  .deflist .dn{position:relative;z-index:1}
+
+  /* CMF machining sweep + phase-card lock-in shimmer */
+  .cmf-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);box-shadow:0 16px 44px rgba(19,36,58,.08)}
+  .cmf-photo img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);transition:transform .6s var(--enter)}
+  .cmf-media:hover .cmf-photo img{transform:scale(1.06)}
+  .cmf-media .ph::before,.cmf-photo::before{content:"";position:absolute;top:0;bottom:0;width:38%;left:-50%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-12deg);opacity:0;z-index:2;pointer-events:none}
+  .cmf-media .ph.scan::before,.cmf-photo.scan::before{animation:sweep 1.5s var(--enter) forwards}
+  @keyframes sweep{0%{left:-50%;opacity:0}14%{opacity:1}82%{opacity:1}100%{left:130%;opacity:0}}
+  .pcard.active .pcard-media::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:translateX(-110%) skewX(-12deg);animation:sweep2 1.05s var(--enter) .08s;pointer-events:none;z-index:2}
+  @keyframes sweep2{to{transform:translateX(120%) skewX(-12deg)}}
+
+  /* exhibition date mask reveal */
+  .exhibit .dmask{display:inline-block;overflow:hidden;padding-bottom:.08em}
+  .exhibit .dinner{display:inline-block}
+
+  /* editorial deflist */
+  .editorial{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .deflist{list-style:none;margin-top:6px}
+  .deflist li{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;transition:transform .25s var(--standard)}
+  .deflist li:hover{transform:translateX(4px)}
+  .deflist li:first-child{border-top:0;padding-top:0}
+  .deflist .dn{font-size:.8rem;font-weight:700;color:var(--cyan-deep);letter-spacing:.1em;padding-top:4px}
+  .deflist h3{margin-bottom:6px}.deflist p{color:var(--ink-2);font-size:.98rem;max-width:46ch}
+
+  /* CMF section */
+  .cmf-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+  .cmf-media{position:relative}
+  .cmf-media .ph{min-height:380px;border-radius:20px}
+  .cmf-badge{position:absolute;left:18px;bottom:18px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 10px 30px rgba(19,36,58,.12)}
+  .cmf-badge img{height:30px;width:auto}
+  .cmf-badge span{font-size:.78rem;font-weight:600;color:var(--ink-2);line-height:1.2}
+  .cmf-feats{list-style:none;margin-top:26px}
+  .cmf-feats li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+  .cmf-feats li:first-child{border-top:0}
+  .cmf-feats .fi{width:38px;height:38px;border-radius:10px;background:var(--icy);display:flex;align-items:center;justify-content:center;flex:none}
+  .cmf-feats .fi svg{width:19px;height:19px;stroke:var(--cyan-deep);fill:none;stroke-width:1.7}
+  .cmf-feats h3{font-size:1.04rem;margin-bottom:3px}
+  .cmf-feats p{font-size:.94rem;color:var(--ink-2);max-width:42ch}
+
+  /* PHASES: pinned horizontal w/ snap */
+  .phases-head{padding:clamp(66px,8vw,110px) 0 30px}
+  .phases-pin{position:relative;height:100svh;overflow:hidden}
+  .phases-track{display:flex;align-items:center;gap:30px;height:100%;padding:0 max(28px,calc((100vw - var(--maxw))/2 + 28px));will-change:transform}
+  .pcard{flex:0 0 min(70vw,440px);background:#fff;border:1px solid var(--line);border-radius:24px;height:min(70vh,540px);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 16px 40px rgba(19,36,58,.06);transition:transform .45s var(--enter),box-shadow .45s var(--enter),opacity .45s var(--enter)}
+  .pcard-top{display:flex;align-items:center;justify-content:space-between;padding:26px 28px 16px}
+  .pcard .pn{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-deep);font-weight:700}
+  .pcard .when{font-size:.78rem;color:var(--ink-3);font-weight:600}
+  .pcard-media{flex:1;margin:0 28px;border-radius:14px;min-height:120px}
+  .pcard-body{padding:22px 28px 28px}
+  .pcard-body h3{font-size:1.5rem;margin-bottom:8px}
+  .pcard-body p{color:var(--ink-2);font-size:.97rem}
+  .deliv{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .deliv li{font-size:.74rem;font-weight:600;color:var(--cyan-deep);background:rgba(0,150,216,.08);border:1px solid rgba(0,150,216,.16);border-radius:100px;padding:5px 12px}
+  .pcard .note{display:inline-block;margin-top:12px;font-size:.74rem;color:var(--cyan-deep);border:1px solid rgba(0,150,216,.3);border-radius:100px;padding:5px 13px}
+  /* slot-machine emphasis */
+  .phases.snapping .pcard{opacity:.5;transform:scale(.93)}
+  .phases.snapping .pcard.active{opacity:1;transform:scale(1);box-shadow:0 30px 70px rgba(19,36,58,.14)}
+  .phases.snapping .pcard .pcard-body,.phases.snapping .pcard .pcard-media{transition:opacity .4s var(--enter),transform .4s var(--enter)}
+  .phases.snapping .pcard:not(.active) .deliv,.phases.snapping .pcard:not(.active) .note{opacity:0;transform:translateY(10px)}
+  .phases.snapping .pcard.active .deliv,.phases.snapping .pcard.active .note{opacity:1;transform:none;transition:opacity .5s var(--enter) .12s,transform .5s var(--enter) .12s}
+  .phases-foot{position:absolute;left:0;right:0;bottom:38px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .steps{display:flex;gap:8px}
+  .steps .stp{display:flex;align-items:center;gap:8px;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--ink-3);padding:7px 14px;border-radius:100px;border:1px solid var(--line);background:rgba(255,255,255,.7);transition:.3s var(--standard)}
+  .steps .stp.on{color:#fff;background:var(--cyan);border-color:var(--cyan)}
+  .phases-prog{width:min(440px,70vw);height:3px;background:var(--grey-3);border-radius:3px;overflow:hidden}
+  .phases-prog span{display:block;height:100%;width:0;background:var(--cyan);border-radius:3px}
+  .scrollcue{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.04em;color:var(--ink-3);margin-top:8px}
+
+  /* ledgers */
+  .ledgers{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+  .ledger{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 10px 30px rgba(19,36,58,.05)}
+  .ledger h3{display:flex;align-items:center;gap:11px;margin-bottom:16px;font-size:1.08rem}
+  .ledger .dot{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+  .ledger.yes .dot{background:rgba(0,150,216,.13)} .ledger.no .dot{background:rgba(19,36,58,.07)}
+  .ledger .dot svg{width:14px;height:14px;stroke-width:2.4;fill:none}
+  .ledger.yes .dot svg{stroke:var(--cyan-deep)} .ledger.no .dot svg{stroke:var(--ink-3)}
+  .ledger ul{list-style:none}
+  .ledger li{padding:12px 0;border-top:1px solid var(--line);font-size:.97rem;color:var(--ink-2);display:flex;gap:12px;align-items:flex-start}
+  .ledger li:first-child{border-top:0}
+  .ledger li svg{width:17px;height:17px;flex:none;margin-top:3px;fill:none;stroke-width:2}
+  .ledger.yes li svg{stroke:var(--cyan-deep)} .ledger.no li svg{stroke:var(--ink-3)}
+
+  /* 3 — requirements: editorial argument stack */
+  .req-stack{position:relative;padding-left:46px;margin:52px 0 0}
+  .rqs-rail{position:absolute;left:6px;top:10px;width:2px;bottom:60px;background:var(--line);border-radius:2px;overflow:hidden}
+  .rqs-fill{width:100%;height:100%;background:var(--cyan);transform-origin:top;transform:scaleY(1)}
+  .rqs-row{position:relative;display:flex;align-items:flex-start;gap:20px;padding-bottom:34px}
+  .rqs-row::before{content:'';position:absolute;left:-40px;top:7px;width:14px;height:14px;border-radius:50%;border:2px solid var(--cyan);background:var(--cyan);z-index:1;transition:border-color .3s,background .3s}
+  .rqs-content{flex:1;display:flex;align-items:flex-start;gap:14px}
+  .rqs-n{font-size:.7rem;font-weight:800;letter-spacing:.07em;color:var(--cyan-deep);padding-top:3px;white-space:nowrap;min-width:18px}
+  .rqs-h{font-size:1.04rem;font-weight:700;color:var(--navy);margin:0 0 4px}
+  .rqs-p{font-size:.85rem;color:var(--ink-3);margin:0;line-height:1.55}
+  .rqs-vis{width:84px;height:54px;flex-shrink:0}
+  .rqs-vis svg{width:100%;height:100%;overflow:visible}
+  .rv-line,.rv-mkt,.rv-edge,.rv-box,.rv-step,.rv-arr,.rv-pins{fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .rv-line,.rv-box,.rv-pins,.rv-step{stroke:var(--navy);stroke-width:1.6}
+  .rv-mkt{stroke:var(--grey-3);stroke-width:1.5}
+  .rv-edge,.rv-arr{stroke:var(--cyan-deep);stroke-width:2}
+  .rv-dot{fill:var(--cyan)}
+  .rqs-sum{display:flex;align-items:center;gap:12px;padding:13px 18px;background:rgba(0,131,219,.07);border:1.5px solid var(--cyan);border-radius:14px}
+  .rqs-sum svg{width:18px;height:18px;stroke:var(--cyan-deep);stroke-width:2;fill:none;flex-shrink:0;stroke-linecap:round;stroke-linejoin:round}
+  .rqs-sum span{font-weight:700;color:var(--navy);font-size:.95rem}
+
+  /* scope */
+  .scope{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin-top:38px;box-shadow:0 14px 40px rgba(19,36,58,.05)}
+  .scope .col{padding:36px}.scope .col+.col{border-left:1px solid var(--line)}
+  .scope .col h3{display:flex;align-items:center;gap:11px;margin-bottom:18px;font-size:1.1rem}
+  .scope .bd{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex:none}
+  .scope .bd svg{width:15px;height:15px;stroke-width:2.4;fill:none}
+  .scope .do .bd{background:rgba(0,150,216,.13)} .scope .do .bd svg{stroke:var(--cyan-deep)}
+  .scope .dont .bd{background:rgba(19,36,58,.07)} .scope .dont .bd svg{stroke:var(--ink-3)}
+  .scope ul{list-style:none}
+  .scope li{padding:13px 0;border-top:1px solid var(--line);display:flex;gap:12px;color:var(--ink-2);font-size:.97rem}
+  .scope li:first-of-type{border-top:0}
+  .scope li svg{width:18px;height:18px;flex:none;margin-top:2px;stroke-width:2;fill:none}
+  .scope .do li svg{stroke:var(--cyan-deep)} .scope .dont li svg{stroke:var(--ink-3)}
+
+  /* eligibility */
+  .elig{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  .scale{background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px;box-shadow:0 14px 40px rgba(19,36,58,.05)}
+  .scale .bar{height:10px;border-radius:100px;background:var(--grey-2);position:relative;margin:26px 0 14px;overflow:hidden}
+  .scale .bar .lit{position:absolute;inset:0;background:var(--cyan);transform-origin:left;transform:scaleX(0)}
+  .scale .ends{display:flex;justify-content:space-between;font-weight:700;color:var(--navy);font-size:.95rem}
+  .scale .mid{display:flex;justify-content:space-between;font-size:.77rem;color:var(--ink-3);margin-top:8px}
+  .facts2{list-style:none}
+  .facts2 li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line);font-size:1.02rem;color:var(--ink-2)}
+  .facts2 li:first-child{border-top:0}.facts2 li b{color:var(--navy);font-weight:700}
+  .facts2 li svg{width:20px;height:20px;flex:none;margin-top:3px;stroke:var(--cyan-deep);fill:none;stroke-width:1.8}
+
+  /* exhibition */
+  .exhibit{position:relative;color:#fff;text-align:center;overflow:hidden;background:var(--navy);padding:clamp(110px,18vh,210px) 0}
+  .exhibit .bgwrap{position:absolute;inset:-12% 0;z-index:0;overflow:hidden}
+  .exhibit .bgimg{width:100%;height:100%;object-fit:cover;opacity:.20;filter:grayscale(.4)}
+  .exhibit .ov{position:absolute;inset:0;background:rgba(19,36,58,.6);z-index:1}
+  .exhibit .wrap{position:relative;z-index:2}
+  .exhibit .date{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:800;letter-spacing:-.04em;color:#fff;line-height:1}
+  .exhibit .where{margin-top:16px;color:var(--cyan-bright);font-weight:600;letter-spacing:.04em}
+  .exhibit p.lead{margin:22px auto 0;color:var(--t-d2);text-align:center}
+
+  /* faq */
+  .faq{max-width:840px;margin:0 auto}
+  .qa{border-top:1px solid var(--line)}.qa:last-child{border-bottom:1px solid var(--line)}
+  .qa button{width:100%;background:none;border:0;cursor:pointer;text-align:left;padding:23px 8px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:inherit;font-size:1.08rem;font-weight:600;letter-spacing:-.015em;color:var(--navy);min-height:44px;transition:color .2s}
+  .qa button:hover{color:var(--cyan-deep)}
+  .qa .pm{position:relative;width:18px;height:18px;flex:none}
+  .qa .pm::before,.qa .pm::after{content:"";position:absolute;background:var(--cyan);transition:transform .25s var(--standard)}
+  .qa .pm::before{top:50%;left:0;right:0;height:2px;transform:translateY(-50%)}
+  .qa .pm::after{left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%)}
+  .qa[aria-expanded="true"] .pm::after{transform:translateX(-50%) rotate(90deg);opacity:0}
+  .qa .ans{max-height:0;overflow:hidden;transition:max-height .3s var(--standard)}
+  .qa .ans p{padding:0 8px 23px;color:var(--ink-2);max-width:66ch;font-size:1rem}
+
+  /* cta */
+  .cta{padding:clamp(70px,9vw,120px) 0}
+  .cta-card{background:var(--navy);border-radius:28px;padding:clamp(44px,6vw,80px);text-align:center;position:relative;overflow:hidden}
+  .cta-card h2{color:#fff;font-size:clamp(2.1rem,5vw,3.6rem);max-width:18ch;margin:0 auto}
+  .cta-card .lead{margin:18px auto 32px;color:var(--t-d2);text-align:center}
+  .cta-card .hero-cta{justify-content:center}
+  .cta-card .eyebrow{color:var(--cyan-bright);justify-content:center;margin-bottom:14px}
+
+  footer{background:var(--paper);color:var(--ink-2);padding:56px 0 40px;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+  .foot .logo{font-size:1.4rem;margin-bottom:8px}
+  .foot p{font-size:.86rem;max-width:42ch;line-height:1.6;margin-top:10px}
+  .foot .links{display:flex;gap:26px;flex-wrap:wrap}
+  .foot .links a{font-size:.86rem;color:var(--ink-2);transition:color .15s}.foot .links a:hover{color:var(--navy)}
+  .foot-chips{display:flex;gap:11px;flex-wrap:wrap;margin-top:16px}
+  .foot-chips .chip{height:50px;padding:9px 15px}.foot-chips .chip img{height:28px}
+  .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3);letter-spacing:.02em}
+
+  /* ============ DIEGETIC STORY FIGURES ============ */
+  .figcap{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);text-align:center;margin-bottom:8px}
+
+  /* 1 — blockers track: three gates unlock as the rail fills */
+  .btrack{position:relative;margin:48px 0 0;padding:18px 0}
+  .btrack .rail{position:absolute;left:30px;right:30px;top:50%;height:4px;background:var(--grey-3);border-radius:4px;transform:translateY(-50%)}
+  .btrack .rail .rfill{position:absolute;left:0;top:0;bottom:0;width:100%;background:linear-gradient(90deg,var(--cyan),var(--cyan-bright));transform-origin:left;transform:scaleX(1);border-radius:4px}
+  .btrack .gates{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .gate{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 12px 32px rgba(19,36,58,.07);border-color:rgba(0,150,216,.4)}
+  .gate .gic{width:46px;height:46px;border-radius:12px;flex:none;display:flex;align-items:center;justify-content:center;background:var(--cyan);border:1px solid var(--cyan);position:relative}
+  .gate .gic svg{width:23px;height:23px;fill:none;stroke-width:1.9;position:absolute}
+  .gate .gic .lock{stroke:var(--ink-2);opacity:0}
+  .gate .gic .chk{stroke:#fff;opacity:1}
+  .gate .gtx{display:flex;flex-direction:column;gap:2px;min-width:0}
+  .gate .gk{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+  .gate .gv{font-size:1.02rem;font-weight:700;color:var(--navy);line-height:1.15;opacity:1}
+  .gate.locked{border-color:var(--line);box-shadow:0 8px 22px rgba(19,36,58,.05)}
+  .gate.locked .gic{background:var(--grey);border-color:var(--line)}
+  .gate.locked .gic .lock{opacity:1} .gate.locked .gic .chk{opacity:0}
+  .gate.locked .gv{opacity:0}
+
+
+  /* (req-stack CSS is in requirements block above) */
+
+  /* 4 — mentorship boundary that holds */
+  .bound{position:relative;margin:0}
+  .scope{position:relative}
+  .bshield{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:50px;height:58px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:14px;box-shadow:0 10px 28px rgba(19,36,58,.12)}
+  .bshield svg{width:28px;height:28px;stroke:var(--cyan-deep);fill:rgba(0,150,216,.08);stroke-width:1.7}
+  .bline{position:absolute;left:50%;top:8%;bottom:8%;width:2px;background:repeating-linear-gradient(var(--cyan) 0 7px,transparent 7px 14px);transform:translateX(-50%);transform-origin:top;z-index:2;opacity:.8}
+  @media(max-width:720px){ .bshield,.bline{display:none} }
+
+  /* 5 — eligibility span: stepping stones light across the range */
+  .span{position:relative;padding:8px 4px 4px}
+  .span .strack{position:relative;height:5px;background:var(--grey-2);border-radius:5px;margin:54px 14px 0}
+  .span .sfill{position:absolute;left:0;top:0;bottom:0;width:100%;background:linear-gradient(90deg,var(--cyan),var(--cyan-bright));border-radius:5px;transform-origin:left;transform:scaleX(1)}
+  .span .snode{position:absolute;top:50%;transform:translate(-50%,-50%);z-index:1}
+  .span .sdot{width:18px;height:18px;border-radius:50%;background:var(--cyan);border:3px solid var(--cyan)}
+  .span .snode .slabel{position:absolute;left:50%;top:-34px;transform:translateX(-50%);white-space:nowrap;font-size:.8rem;font-weight:700;color:var(--navy)}
+  .span .snode .ssub{position:absolute;left:50%;top:26px;transform:translateX(-50%);white-space:nowrap;font-size:.7rem;color:var(--ink-3)}
+  .span .snode.off .sdot{background:#fff;border-color:var(--grey-3);box-shadow:none}
+  .span .snode.off .slabel{color:var(--ink-3)}
+  @media(max-width:560px){ .span .snode .slabel{font-size:.66rem} .span .snode .ssub{display:none} .rqs-vis{display:none} }
+
+  /* ---- scroll-driven state transitions only (no idle glow/float loops) ---- */
+  .gate{transition:transform .5s var(--enter),box-shadow .5s var(--enter),border-color .5s var(--enter)}
+  .gate:not(.locked){transform:translateY(-6px)}
+  .gate .gic .lock,.gate .gic .chk{transition:opacity .4s var(--enter),transform .4s var(--enter)}
+  .gate .gic .lock{transform:rotate(-90deg) scale(.4)} .gate.locked .gic .lock{transform:rotate(0) scale(1)}
+  .gate .gic .chk{transform:scale(1)} .gate.locked .gic .chk{transform:scale(0)}
+  .gate .gv{transition:opacity .45s var(--enter),transform .45s var(--enter)} .gate.locked .gv{transform:translateY(7px)}
+  .span .sdot{transition:background .35s,border-color .35s,transform .35s}
+  .span .snode:not(.off) .sdot{transform:scale(1.15)}
+  .span .snode .slabel,.span .snode .ssub{transition:color .35s}
+
+  @media(max-width:940px){
+    .btrack .gates{grid-template-columns:1fr;gap:14px}
+    .btrack .rail{display:none}
+    .req-stack{padding-left:32px}
+    .rqs-row{gap:12px}
+    .rqs-vis{width:70px;height:44px}
+    .hero{min-height:auto;padding:calc(var(--nav-h) + 48px) 0 56px}
+    .editorial,.elig,.cmf-grid{grid-template-columns:1fr;gap:34px}
+    .cred{grid-template-columns:1fr 1fr}.cred .c:nth-child(2){border-right:0}.cred .c:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .cmf-media .ph{min-height:300px}
+    .problem-pin{min-height:auto;padding:72px 0}
+    .death{flex-direction:column;gap:10px}
+    .death-tx{white-space:normal}
+    .phases-pin{height:auto;overflow:visible}
+    .phases-track{flex-direction:column;height:auto;padding:0 28px 20px;gap:18px;transform:none !important}
+    .pcard{flex:none;width:100%;height:auto}
+    .pcard-media{min-height:180px}
+    .phases-foot{display:none}
+  }
+  @media(max-width:720px){
+    .navlinks{position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;gap:0;background:#fff;padding:8px 28px 22px;transform:translateY(-130%);transition:transform .3s var(--standard);border-bottom:1px solid var(--line);align-items:stretch}
+    .navlinks.open{transform:translateY(0)}
+    .navlinks a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line);font-size:1rem;color:var(--navy)}
+    .navlinks .btn{margin-top:14px}
+    .navtoggle{display:flex}
+    .navtoggle.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .navtoggle.on span:nth-child(2){opacity:0}
+    .navtoggle.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .scope{grid-template-columns:1fr}
+    .scope .col+.col{border-left:0;border-top:1px solid var(--line)}
+  }
+  @media(max-width:520px){
+    .cred{grid-template-columns:1fr}.cred .c{border-right:0;border-bottom:1px solid var(--line)}.cred .c:last-child{border-bottom:0}
+    .wrap{padding:0 20px}.chips{gap:12px}.chip{height:56px;padding:10px 16px}.chip img{height:32px}
+    .orgs-row{gap:18px}.orglock{gap:16px}.orglock img{height:34px}.orglock .gridimg{height:40px}.orglock .div{height:32px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="InnovateX home">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></a>
+    <nav class="navlinks" id="navlinks" aria-label="Primary">
+      <a href="#programme">Programme</a>
+      <a href="#cmf">Where you build</a>
+      <a href="#process">Phases</a>
+      <a href="#eligibility">Eligibility</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#register">Register <span class="arr" aria-hidden="true">→</span></a>
+    </nav>
+    <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="orgs fx">
+      <span class="orgs-label">Co-organised by</span>
+      <div class="orgs-row">
+        <span class="orglock">
+          <img src="assets/IIT-Delhi-Logo-f7u2J79S.png" alt="Indian Institute of Technology Delhi" width="160" height="44">
+          <span class="div" aria-hidden="true"></span>
+          <img src="assets/CMF-Logo-CW4iBhSi.png" alt="Central Manufacturing Facility, IIT Delhi" width="110" height="44">
+        </span>
+        <span class="amp" aria-hidden="true">&amp;</span>
+        <span class="orglock"><img class="gridimg" src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="72" height="36"></span>
+      </div>
+    </div>
+    <div class="hero-logo fx"><span class="logo">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy lxa" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv lxb" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></span></div>
+    <h1 class="fx">Turn your idea into a hardware product you can <em>hold</em>, funded start to finish.</h1>
+    <p class="sub fx">Thirty students. One real build each, made at IIT Delhi's Central Manufacturing Facility and exhibited on 19 September 2026.</p>
+    <div class="hero-cta fx">
+      <a class="btn btn-primary" href="#register">Register your pitch <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#process">See the five phases</a>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="s-grey" aria-label="At a glance" style="padding:clamp(48px,6vw,72px) 0">
+  <div class="wrap">
+    <div class="cred reveal">
+      <div class="c"><div class="v num" data-count="30">0</div><div class="l">Students chosen across India. Individuals, never teams.</div></div>
+      <div class="c"><div class="v num" data-count="5">0</div><div class="l">Phases from a written pitch to a finished unit.</div></div>
+      <div class="c"><div class="v num" data-count="100" data-suffix="%">0</div><div class="l">Of your approved bill of materials, funded.</div></div>
+      <div class="c"><div class="v"><em>Free</em></div><div class="l">No fee to pitch, no fee to take part.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem" aria-label="Why InnovateX exists">
+  <div class="problem-pin" id="problemPin">
+    <div class="wrap">
+      <p class="kick">Most student hardware never gets built</p>
+      <div class="death-stack">
+        <div class="death">
+          <span class="death-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h9l3 3v17l-3-2-3 2-3-2-3 2V2z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></span>
+          <span class="death-tx">It dies at the bill of materials.<i class="strike" aria-hidden="true"></i></span>
+        </div>
+        <div class="death">
+          <span class="death-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+          <span class="death-tx">It dies waiting for a machine.<i class="strike" aria-hidden="true"></i></span>
+        </div>
+        <div class="death">
+          <span class="death-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V5a2 2 0 012-2h10a2 2 0 012 2v16M15 12h.01"/></svg></span>
+          <span class="death-tx">It dies in an empty room.<i class="strike" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <p class="turn">InnovateX is where it <em>lives.</em><span class="ul" aria-hidden="true"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT IS -->
+<section id="programme" class="s-paper">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="head">
+        <span class="eyebrow reveal">What InnovateX is</span>
+        <h2 class="reveal-mask"><span class="reveal-line">The funding, the workshop, and the audience so you can actually finish.</span></h2>
+        <p class="lead reveal">We remove the three things that kill student hardware: money, machines, and a reason to ship. We keep the work yours.</p>
+      </div>
+      <div class="deflist-wrap">
+        <span class="spine" aria-hidden="true"></span>
+        <ol class="deflist">
+          <li><span class="dn">01</span><div><h3>You design a product, not a demo</h3><p>Every project names a problem, a user, a form factor, and a target unit cost. Not just a working prototype.</p></div></li>
+          <li><span class="dn">02</span><div><h3>Hardware leads; software supports</h3><p>The core deliverable is physical. Firmware and ML are welcome only where they serve the hardware.</p></div></li>
+          <li><span class="dn">03</span><div><h3>The capability stays with you</h3><p>Mentors review and challenge your work. Bounded scope and timelapse keep you the author of it.</p></div></li>
+        </ol>
+      </div>
+    </div>
+    <p class="figcap" style="margin-top:54px">What kills student hardware, and what we replace it with</p>
+    <div class="btrack" id="btrack" aria-hidden="true">
+      <div class="rail"><span class="rfill"></span></div>
+      <div class="gates">
+        <div class="gate" data-i="0">
+          <span class="gic"><svg class="lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><svg class="chk" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          <span class="gtx"><span class="gk">No money</span><span class="gv">Fully funded</span></span>
+        </div>
+        <div class="gate" data-i="1">
+          <span class="gic"><svg class="lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><svg class="chk" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          <span class="gtx"><span class="gk">No machines</span><span class="gv">CMF access</span></span>
+        </div>
+        <div class="gate" data-i="2">
+          <span class="gic"><svg class="lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><svg class="chk" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></span>
+          <span class="gtx"><span class="gk">No audience</span><span class="gv">The exhibition</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CMF -->
+<section id="cmf" class="s-grey">
+  <div class="wrap">
+    <div class="cmf-grid">
+      <div class="cmf-media reveal">
+        <div class="cmf-photo">
+          <img src="assets/cmf-C5ysMiRq.jpg" alt="Central Manufacturing Facility, IIT Delhi" loading="lazy" decoding="async">
+        </div>
+        <div class="cmf-badge"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="80" height="30"><span>Central Manufacturing<br>Facility · IIT Delhi</span></div>
+      </div>
+      <div>
+        <span class="eyebrow reveal">Where you build it</span>
+        <h2 class="reveal-mask" style="margin-top:14px"><span class="reveal-line">Made at IIT Delhi's Central Manufacturing Facility.</span></h2>
+        <p class="lead reveal" style="margin-top:16px">The CMF is the workshop most student projects never get near. IIT Delhi's central facility for precision fabrication and manufacturing. As a participant, you get supervised access to it.</p>
+        <ul class="cmf-feats reveal">
+          <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Precision machining &amp; fabrication</h3><p>Take a rough prototype to a finished, repeatable unit.</p></div></li>
+          <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span><div><h3>Supervised access, when you need it</h3><p>Request facility time for the steps your own setup can't cover.</p></div></li>
+          <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4-3.4 7.4-8 8-4.6-.6-8-4-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Technical review from CMF engineers</h3><p>Expert eyes catch errors before they cost you a build.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHASES -->
+<section id="process" class="s-icy phases" id="phasesSec">
+  <div class="phases-head">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow reveal">How it works</span>
+        <h2 class="reveal-mask"><span class="reveal-line">Five phases. Scroll to lock each one in.</span></h2>
+        <p class="lead reveal">From your written pitch in June to a unit you exhibit at IIT Delhi in September.</p>
+      </div>
+    </div>
+  </div>
+  <div class="phases-pin" id="phasesPin">
+    <div class="phases-track" id="phasesTrack">
+      <article class="pcard">
+        <div class="pcard-top"><span class="pn">Phase 01</span><span class="when">Rolling · from June</span></div>
+        <div class="ph pcard-media" data-cap="pitch"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1zM8 13h8M8 17h5"/></svg><span class="cap">Your written pitch</span></div>
+        <div class="pcard-body"><h3>Pitch</h3><p>Submit your product, your build approach, and a scalability rationale. Reviewed until thirty are accepted.</p><ul class="deliv"><li>Product concept</li><li>Indicative BOM</li><li>Scalability</li></ul></div>
+      </article>
+      <article class="pcard">
+        <div class="pcard-top"><span class="pn">Phase 02</span><span class="when">July</span></div>
+        <div class="ph pcard-media" data-cap="design"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l3-3 3 3 5-6"/><circle cx="7" cy="14" r="1"/></svg><span class="cap">CAD model &amp; schematic</span></div>
+        <div class="pcard-body"><h3>Define &amp; design</h3><p>Produce a 3D model of the assembly, a schematic and PCB layout where applicable, and a line-itemised BOM.</p><ul class="deliv"><li>3D model</li><li>Schematic / PCB</li><li>Line-item BOM</li></ul></div>
+      </article>
+      <article class="pcard">
+        <div class="pcard-top"><span class="pn">Phase 03</span><span class="when">August</span></div>
+        <div class="ph pcard-media" data-cap="bom"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 13l2 2 4-4"/></svg><span class="cap">Approved bill of materials</span></div>
+        <div class="pcard-body"><h3>BOM review &amp; procurement</h3><p>Your bill of materials is approved line by line. You procure against approved lines and are reimbursed against receipts.</p><span class="note">Written approval required to proceed</span></div>
+      </article>
+      <article class="pcard">
+        <div class="pcard-top"><span class="pn">Phase 04</span><span class="when">August → September</span></div>
+        <div class="ph pcard-media" data-cap="build"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-.7-.7-2.5z"/></svg><span class="cap">Build timelapse</span></div>
+        <div class="pcard-body"><h3>Build</h3><p>Assemble, integrate, debug, calibrate, and finalise your unit, recorded through timelapse that evidences your authorship.</p><ul class="deliv"><li>Working unit</li><li>Timelapse</li><li>Calibration</li></ul></div>
+      </article>
+      <article class="pcard">
+        <div class="pcard-top"><span class="pn">Phase 05</span><span class="when">19 September 2026</span></div>
+        <div class="ph pcard-media" data-cap="exhibit"><svg viewBox="0 0 24 24"><path d="M4 21h16M7 21v-5h10v5M9 16V8h6v8M5 8l7-5 7 5"/></svg><span class="cap">Exhibition booth · IIT Delhi</span></div>
+        <div class="pcard-body"><h3>Exhibition</h3><p>Present your finished product at IIT Delhi before government, academia, and industry, and answer questions on design and build.</p><ul class="deliv"><li>Live demo</li><li>Certificate</li><li>The room</li></ul></div>
+      </article>
+    </div>
+    <div class="phases-foot" aria-hidden="true">
+      <div class="steps" id="phasesSteps">
+        <span class="stp on">01 Pitch</span><span class="stp">02 Design</span><span class="stp">03 BOM</span><span class="stp">04 Build</span><span class="stp">05 Exhibit</span>
+      </div>
+      <div class="phases-prog"><span id="phasesProg"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="s-grey">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal">What makes the cut</span>
+      <h2 class="reveal-mask"><span class="reveal-line">We back ideas that are genuinely new.</span></h2>
+      <p class="lead reveal">Not another version of something that already exists. The strongest pitches solve a real problem with a unique edge: a fraction of the cost of what's out there, or tech that simply hasn't been done. Every project is built from these four.</p>
+    </div>
+    <div class="req-stack" id="reqStack">
+      <div class="rqs-rail" aria-hidden="true"><div class="rqs-fill" id="rqsFill"></div></div>
+
+      <div class="rqs-row" data-i="0">
+        <div class="rqs-content">
+          <span class="rqs-n">01</span>
+          <div><h3 class="rqs-h">A real problem</h3><p class="rqs-p">A specific pain for a specific user. Not a demo looking for a use.</p></div>
+        </div>
+        <div class="rqs-vis" aria-hidden="true" id="rqsV0">
+          <svg viewBox="0 0 80 52" fill="none">
+            <path class="rv-line" d="M4 36 L20 36 L28 12 L36 36 L76 36"/>
+            <circle class="rv-dot" cx="32" cy="24" r="3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="rqs-row" data-i="1">
+        <div class="rqs-content">
+          <span class="rqs-n">02</span>
+          <div><h3 class="rqs-h">A unique edge</h3><p class="rqs-p">Genuinely new: a fraction of the cost, or tech that hasn't shipped.</p></div>
+        </div>
+        <div class="rqs-vis" aria-hidden="true" id="rqsV1">
+          <svg viewBox="0 0 80 52" fill="none">
+            <path class="rv-mkt" d="M8 40 L72 40"/>
+            <path class="rv-edge" d="M8 40 L26 40 L72 14"/>
+            <circle class="rv-dot" cx="26" cy="40" r="3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="rqs-row" data-i="2">
+        <div class="rqs-content">
+          <span class="rqs-n">03</span>
+          <div><h3 class="rqs-h">A form factor</h3><p class="rqs-p">A defined physical product with a real shape and footprint.</p></div>
+        </div>
+        <div class="rqs-vis" aria-hidden="true" id="rqsV2">
+          <svg viewBox="0 0 80 52" fill="none">
+            <rect class="rv-box" x="16" y="10" width="48" height="32" rx="5"/>
+            <circle class="rv-dot" cx="40" cy="26" r="6"/>
+            <path class="rv-pins" d="M24 10 L24 5 M40 10 L40 5 M56 10 L56 5 M24 42 L24 47 M40 42 L40 47 M56 42 L56 47"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="rqs-row" data-i="3">
+        <div class="rqs-content">
+          <span class="rqs-n">04</span>
+          <div><h3 class="rqs-h">A path to scale</h3><p class="rqs-p">A unit cost that holds up well past the first build.</p></div>
+        </div>
+        <div class="rqs-vis" aria-hidden="true" id="rqsV3">
+          <svg viewBox="0 0 80 52" fill="none">
+            <path class="rv-step" d="M8 46 L8 36 L28 36 L28 24 L48 24 L48 14 L76 14"/>
+            <path class="rv-arr" d="M68 6 L76 14 L68 22"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="rqs-sum" id="rqsSum" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M5 12 L19 12 M13 6 L19 12 L13 18"/></svg>
+        <span>A fundable build</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTORSHIP -->
+<section class="s-paper">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal">Authorship &amp; mentorship</span>
+      <h2 class="reveal-mask"><span class="reveal-line">Mentors guide you. They never build it for you.</span></h2>
+      <p class="lead reveal">Mentor scope is bounded by design, so the capability and the product stay with you.</p>
+    </div>
+    <div class="scope reveal">
+      <span class="bline" aria-hidden="true"></span>
+      <span class="bshield" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4-3.5 7.5-8 9-4.5-1.5-8-5-8-9V6z"/><path d="M9 12l2 2 4-4" stroke-width="2"/></svg></span>
+      <div class="col do">
+        <h3><span class="bd"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg></span>What mentors do</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Review the work you submit</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Flag errors and unsound assumptions</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Point you to prior art and literature</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Suggest directions to investigate</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Answer your specific technical questions</li>
+        </ul>
+      </div>
+      <div class="col dont">
+        <h3><span class="bd"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>What they will not do</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Design any subsystem for you</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Hand you their own code or schematics</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Fabricate or assemble on your behalf</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Produce layouts or models for you</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section id="eligibility" class="s-grey">
+  <div class="wrap">
+    <div class="head" style="margin-bottom:44px"><span class="eyebrow reveal">Eligibility</span><h2 class="reveal-mask"><span class="reveal-line">If you build, you can pitch.</span></h2></div>
+    <div class="elig">
+      <div class="scale reveal">
+        <span class="eyebrow" style="color:var(--cyan-deep)">Open to</span>
+        <div class="span" id="span" aria-hidden="true">
+          <div class="strack"><span class="sfill" id="spanFill"></span>
+            <div class="snode" style="left:5%"><span class="sdot"></span><span class="slabel">Grade 10</span><span class="ssub">School</span></div>
+            <div class="snode" style="left:37%"><span class="sdot"></span><span class="slabel">Higher secondary</span><span class="ssub">Class 11–12</span></div>
+            <div class="snode" style="left:67%"><span class="sdot"></span><span class="slabel">Undergraduate</span><span class="ssub">College</span></div>
+            <div class="snode" style="left:95%"><span class="sdot"></span><span class="slabel">4th year</span><span class="ssub">Final</span></div>
+          </div>
+        </div>
+      </div>
+      <ul class="facts2">
+        <li><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v6l9 4 9-4V7"/></svg><span>Indian students, <b>Grade 10 to the fourth year of college</b>.</span></li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0"/></svg><span>An <b>individual</b> programme. No teams, one entry per person.</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span><b>Free</b> to pitch and to take part.</span></li>
+        <li><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 9h16"/></svg><span>AI tools <b>permitted if you disclose them</b>. You remain the author.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXHIBITION -->
+<section class="exhibit" aria-label="The exhibition">
+  <div class="bgwrap"><img class="bgimg" src="assets/iitd-campus-gp0zI0XH.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async"></div>
+  <div class="ov"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal" style="color:var(--cyan-bright);justify-content:center">The finale</span>
+    <div class="date" style="margin-top:16px"><span class="dmask"><span class="dinner">19 September 2026</span></span></div>
+    <div class="where reveal">Binny Bansal Exhibition Hall · IIT Delhi</div>
+    <p class="lead reveal">Your finished product is exhibited on equal terms, no ranking, no winner, before an audience invited from government, academia, and industry.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="s-paper">
+  <div class="wrap">
+    <div class="head" style="text-align:center;margin:0 auto 44px;max-width:560px"><span class="eyebrow reveal" style="justify-content:center">Questions, answered</span><h2 class="reveal" style="margin:14px auto 0">Frequently asked</h2></div>
+    <div class="faq">
+      <div class="qa reveal"><button aria-expanded="false">Is this a team event?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. Every entry is by a single individual, and you cannot be listed on a second application within the same edition.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I need to study at, or travel to, IIT Delhi?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. You design and build with your own resources, and may request supervised access to the Central Manufacturing Facility if your project needs equipment you lack. The final exhibition is held at IIT Delhi.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Is it a competition with winners?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. There is no ranking and no single winner. Every completed project is exhibited on equal terms. The value is tangible: a funded build, a finished product you own, a certificate, and a stage in front of people who can take it further.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">What does it cost me?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Nothing to pitch or take part, and the programme funds your bill of materials. Personal travel, accommodation, and equipment you already own are not covered.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Can I use AI tools?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes, provided you disclose how you used them. You remain the author of the work and the capability behind it.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every participant who completes the programme receives a certificate and exhibits their finished product at IIT Delhi.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="cta s-paper">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <span class="eyebrow">Applications open · rolling review</span>
+      <h2>Pitch one product. Build it for real.</h2>
+      <p class="lead">Thirty places, funded from your concept to a working unit. If you are an Indian school or college student, register your pitch.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://innovatex.iitd.ac.in" target="_blank" rel="noopener">Register your pitch <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#process" style="color:#fff;border-color:rgba(255,255,255,.3)">Review the phases first</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="max-width:380px">
+        <a class="logo" href="#top" aria-label="InnovateX home">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></a>
+        <p>A hardware product development programme, co-organised by the Central Manufacturing Facility (IIT Delhi) and Project GRID.</p>
+        <div class="foot-chips">
+          <span class="chip"><img src="assets/IIT-Delhi-Logo-f7u2J79S.png" alt="IIT Delhi" width="180" height="50" loading="lazy"></span>
+          <span class="chip"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="120" height="50" loading="lazy"></span>
+          <span class="chip grid"><img src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="80" height="50" loading="lazy"></span>
+        </div>
+      </div>
+      <nav class="links" aria-label="Footer">
+        <a href="#programme">Programme</a><a href="#cmf">Where you build</a><a href="#process">Phases</a><a href="#eligibility">Eligibility</a><a href="#faq">FAQ</a><a href="#register">Register</a>
+      </nav>
+    </div>
+    <div class="legal"><span>© 2026 Project GRID &amp; CMF, IIT Delhi</span><span>Innovation · Engineering · Impact</span></div>
+  </div>
+</footer>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGSAP=!!(window.gsap&&window.ScrollTrigger);
+
+  var nav=document.getElementById('nav'),toggle=document.getElementById('navtoggle'),links=document.getElementById('navlinks');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY>10); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  toggle.addEventListener('click',function(){var o=links.classList.toggle('open');toggle.classList.toggle('on',o);toggle.setAttribute('aria-expanded',o);toggle.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
+
+  function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
+
+  if(reduce||!hasGSAP){
+    clearTimeout(window.__af); root.classList.remove('anim');
+    instantCount();
+    return;
+  }
+  clearTimeout(window.__af);
+  gsap.registerPlugin(ScrollTrigger);
+
+
+  var lenis=null;
+  if(window.Lenis){
+    lenis=new Lenis({lerp:.095,smoothWheel:true});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){lenis.raf(t*1000);});
+    gsap.ticker.lagSmoothing(0);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();links.classList.remove('open');toggle.classList.remove('on');toggle.setAttribute('aria-expanded','false');if(lenis)lenis.scrollTo(el,{offset:-66});else el.scrollIntoView();});});
+
+  /* hero build */
+  var tl=gsap.timeline({defaults:{ease:'power3.out'}});
+  tl.fromTo('.hero-logo',{opacity:0,y:26},{opacity:1,y:0,duration:.85})
+    .fromTo('.hero-logo .logo',{letterSpacing:'.08em'},{letterSpacing:'-.045em',duration:.85},'<')
+    .fromTo('.hero-logo .lxa',{scaleX:0,transformOrigin:'left center'},{scaleX:1,duration:.5},'-=.42')
+    .fromTo('.hero-logo .lxb',{scaleX:0,transformOrigin:'right center'},{scaleX:1,duration:.5},'-=.34')
+    .fromTo('.orgs',{opacity:0,y:12},{opacity:1,y:0,duration:.5},'-=.7')
+    .fromTo('.hero h1,.hero .sub,.hero .hero-cta',{opacity:0,y:20},{opacity:1,y:0,duration:.6,stagger:.1},'-=.45');
+
+  gsap.utils.toArray('.reveal-line').forEach(function(line){
+    gsap.fromTo(line,{yPercent:115},{yPercent:0,duration:.9,ease:'power4.out',scrollTrigger:{trigger:line,start:'top 88%'}});
+  });
+  gsap.utils.toArray('.reveal').forEach(function(el){
+    gsap.fromTo(el,{y:30,opacity:0},{y:0,opacity:1,duration:.7,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+
+  /* draw-on checklist: ledgers + mentor scope tick/cross themselves in, row by row */
+  gsap.utils.toArray('.ledger, .scope .col').forEach(function(box){
+    var paths=box.querySelectorAll('li svg path, h3 svg path');
+    var rows=box.querySelectorAll('li');
+    paths.forEach(function(p){ if(!p.getTotalLength)return; var len=p.getTotalLength()||1; gsap.set(p,{strokeDasharray:len,strokeDashoffset:len}); });
+    gsap.set(rows,{x:16});
+    ScrollTrigger.create({trigger:box,start:'top 82%',once:true,onEnter:function(){
+      gsap.to(paths,{strokeDashoffset:0,duration:.55,ease:'power2.out',stagger:.08});
+      gsap.to(rows,{x:0,duration:.5,ease:'power3.out',stagger:.08});
+    }});
+  });
+
+  /* what-it-is: spine draws + each step activates in sequence */
+  gsap.fromTo('.deflist-wrap .spine',{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:'.deflist-wrap',start:'top 78%',end:'bottom 72%',scrub:.6}});
+  gsap.utils.toArray('.deflist li').forEach(function(li){
+    var n=li.querySelector('.dn');
+    var t=gsap.timeline({scrollTrigger:{trigger:li,start:'top 84%'}});
+    t.fromTo(li,{opacity:0,x:26},{opacity:1,x:0,duration:.6,ease:'power3.out'})
+     .fromTo(n,{scale:.2},{scale:1,duration:.5,ease:'back.out(2.2)'},'-=.45');
+  });
+
+
+  /* eligibility: facts cascade in beside the filling range */
+  gsap.fromTo('.facts2 li',{opacity:0,x:22},{opacity:1,x:0,duration:.5,ease:'power3.out',stagger:.12,scrollTrigger:{trigger:'.facts2',start:'top 82%'}});
+
+  /* CMF: machining sweep across the facility image */
+  ScrollTrigger.create({trigger:'.cmf-media',start:'top 78%',once:true,onEnter:function(){var ph=document.querySelector('.cmf-photo')||document.querySelector('.cmf-media .ph');if(ph)ph.classList.add('scan');}});
+
+  /* exhibition date: mask reveal */
+  gsap.utils.toArray('.exhibit .dinner').forEach(function(el){
+    gsap.fromTo(el,{yPercent:115},{yPercent:0,duration:1,ease:'power4.out',scrollTrigger:{trigger:'.exhibit',start:'top 72%'}});
+  });
+
+  /* hero: subtle depth parallax on exit */
+  gsap.to('.hero .wrap',{yPercent:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.5}});
+
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target=+el.getAttribute('data-count'),suffix=el.getAttribute('data-suffix')||'',o={v:0};
+    ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:function(){gsap.to(o,{v:target,duration:1.3,ease:'power2.out',onUpdate:function(){el.textContent=Math.round(o.v)+suffix;}});}});
+  });
+
+  gsap.to('.exhibit .bgimg',{yPercent:14,ease:'none',scrollTrigger:{trigger:'.exhibit',start:'top bottom',end:'bottom top',scrub:true}});
+
+  /* FIGURE 1 — blockers: scroll fills the rail; each gate unlocks as it passes */
+  (function(){
+    var bt=document.getElementById('btrack'); if(!bt)return;
+    var fill=bt.querySelector('.rfill'),gates=[].slice.call(bt.querySelectorAll('.gate'));
+    gsap.set(fill,{scaleX:0}); gates.forEach(function(g){g.classList.add('locked');});
+    ScrollTrigger.create({trigger:bt,start:'top 80%',end:'top 26%',scrub:.7,onUpdate:function(self){
+      var p=self.progress; gsap.set(fill,{scaleX:p});
+      gates.forEach(function(g,i){ g.classList.toggle('locked', p < (i+1)/(gates.length+0.4)); });
+    }});
+  })();
+
+  /* FIGURE 3 — requirements: scroll-driven argument stack */
+  (function(){
+    var rs=document.getElementById('reqStack'); if(!rs)return;
+    var fill=document.getElementById('rqsFill');
+    var rows=[].slice.call(rs.querySelectorAll('.rqs-row'));
+    var sum=document.getElementById('rqsSum');
+    var cl=function(v){return v<0?0:v>1?1:v;};
+    var rowData=rows.map(function(row){
+      var paths=[].slice.call(row.querySelectorAll('path,rect'));
+      var lens=paths.map(function(p){var l=(p.getTotalLength?p.getTotalLength():60)||60; gsap.set(p,{strokeDasharray:l,strokeDashoffset:l}); return l;});
+      var dots=[].slice.call(row.querySelectorAll('circle.rv-dot'));
+      gsap.set(dots,{opacity:0}); gsap.set(row,{opacity:0,x:-20});
+      return {paths:paths,lens:lens,dots:dots};
+    });
+    gsap.set(fill,{scaleY:0}); gsap.set(sum,{opacity:0,x:-20});
+    var starts=[0.04,0.24,0.44,0.64];
+    ScrollTrigger.create({trigger:rs,start:'top 80%',end:'top 12%',scrub:.7,onUpdate:function(self){
+      var p=self.progress;
+      gsap.set(fill,{scaleY:cl(p/0.86)});
+      rows.forEach(function(row,i){
+        var rd=rowData[i];
+        var t=cl((p-starts[i])/0.17); gsap.set(row,{opacity:t,x:-20*(1-t)});
+        var dt=cl((p-starts[i]-0.05)/0.12);
+        rd.paths.forEach(function(path,j){ gsap.set(path,{strokeDashoffset:rd.lens[j]*(1-dt)}); });
+        gsap.set(rd.dots,{opacity:dt});
+      });
+      var vt=cl((p-0.82)/0.12); gsap.set(sum,{opacity:vt,x:-20*(1-vt)});
+    }});
+  })();
+
+  /* FIGURE 4 — mentorship: scroll draws the boundary down, then sets the shield */
+  (function(){
+    var scope=document.querySelector('.scope'),bl=scope&&scope.querySelector('.bline'),bs=scope&&scope.querySelector('.bshield'); if(!bl)return;
+    var cl=function(v){return v<0?0:v>1?1:v;};
+    gsap.set(bl,{scaleY:0,transformOrigin:'top center'}); gsap.set(bs,{scale:0,opacity:0});
+    ScrollTrigger.create({trigger:'.scope',start:'top 82%',end:'top 42%',scrub:.6,onUpdate:function(self){
+      var p=self.progress;
+      gsap.set(bl,{scaleY:cl(p/0.7)});
+      var s=cl((p-0.55)/0.45); gsap.set(bs,{scale:s,opacity:s});
+    }});
+  })();
+
+  /* FIGURE 5 — eligibility: scroll fills the range; each stone lights as it passes */
+  (function(){
+    var sp=document.getElementById('span'); if(!sp)return;
+    var fill=document.getElementById('spanFill'),nodes=[].slice.call(sp.querySelectorAll('.snode'));
+    gsap.set(fill,{scaleX:0}); nodes.forEach(function(n){n.classList.add('off');});
+    ScrollTrigger.create({trigger:'.scale',start:'top 78%',end:'top 32%',scrub:.7,onUpdate:function(self){
+      var p=self.progress; gsap.set(fill,{scaleX:p});
+      nodes.forEach(function(n){ n.classList.toggle('off', p < (parseFloat(n.style.left)/100)-0.01); });
+    }});
+  })();
+
+  /* PHASES: pinned horizontal with slot-machine snap */
+  var phasesSec=document.querySelector('.phases');
+  var mm=gsap.matchMedia();
+
+  /* PROBLEM: pinned cinematic — three ideas die, one lives */
+  mm.add('(min-width: 941px)',function(){
+    var deaths=gsap.utils.toArray('.problem .death');
+    var turn=document.querySelector('.problem .turn');
+    var ul=document.querySelector('.problem .turn .ul');
+    var tlP=gsap.timeline({scrollTrigger:{trigger:'#problemPin',start:'top top',end:'+=2400',pin:true,scrub:1,anticipatePin:1}});
+    tlP.fromTo('.problem .kick',{opacity:0,y:18},{opacity:1,y:0,duration:.5});
+    deaths.forEach(function(d){
+      var tx=d.querySelector('.death-tx'),svg=d.querySelector('.death-ic svg'),ic=d.querySelector('.death-ic'),strike=d.querySelector('.strike');
+      tlP.fromTo(d,{opacity:0,y:42},{opacity:1,y:0,duration:.9,ease:'power3.out'},'>');
+      tlP.to(strike,{scaleX:1,duration:.55,ease:'power2.inOut'},'>.15');
+      tlP.to(tx,{color:'#C2CAD4',duration:.5},'<');
+      tlP.to(svg,{stroke:'#C8CFD8',duration:.5},'<');
+      tlP.to(ic,{backgroundColor:'#F6F8FA',borderColor:'rgba(19,36,58,.05)',duration:.5},'<');
+      tlP.to(d,{opacity:.5,y:12,duration:.55,ease:'power2.in'},'>.05');
+    });
+    tlP.to(deaths,{opacity:.12,scale:.9,y:20,duration:.7,ease:'power2.inOut'},'>.1');
+    tlP.fromTo(turn,{opacity:0,y:48,scale:.82},{opacity:1,y:0,scale:1,duration:1.1,ease:'back.out(1.4)'},'>-.15');
+    tlP.fromTo(ul,{scaleX:0},{scaleX:1,duration:.7,ease:'power3.out'},'>-.35');
+    return function(){ if(tlP.scrollTrigger)tlP.scrollTrigger.kill(); tlP.kill(); gsap.set('.problem .kick,.problem .death,.problem .death-tx,.problem .death-ic,.problem .death-ic svg,.problem .strike,.problem .turn,.problem .turn .ul',{clearProps:'all'}); };
+  });
+  mm.add('(max-width: 940px)',function(){
+    var tlm=gsap.timeline({scrollTrigger:{trigger:'.problem',start:'top 72%'}});
+    tlm.fromTo('.problem .kick',{opacity:0,y:14},{opacity:1,y:0,duration:.4})
+       .fromTo('.problem .death',{opacity:0,y:24},{opacity:1,y:0,stagger:.16,duration:.55},'>')
+       .to('.problem .strike',{scaleX:1,stagger:.16,duration:.4},'<.15')
+       .to('.problem .death',{opacity:.45,duration:.45},'>.05')
+       .fromTo('.problem .turn',{opacity:0,y:26,scale:.9},{opacity:1,y:0,scale:1,duration:.7,ease:'back.out(1.4)'},'>-.1')
+       .fromTo('.problem .turn .ul',{scaleX:0},{scaleX:1,duration:.55},'>-.25');
+    return function(){ if(tlm.scrollTrigger)tlm.scrollTrigger.kill(); tlm.kill(); };
+  });
+
+  mm.add('(min-width: 941px)',function(){
+    var track=document.getElementById('phasesTrack'),pin=document.getElementById('phasesPin');
+    var prog=document.getElementById('phasesProg'),steps=[].slice.call(document.querySelectorAll('#phasesSteps .stp'));
+    var cards=[].slice.call(track.querySelectorAll('.pcard')),N=cards.length;
+    var dist=function(){ return track.scrollWidth - pin.clientWidth; };
+    phasesSec.classList.add('snapping');
+    function setActive(p){
+      var idx=Math.round(p*(N-1));
+      cards.forEach(function(c,i){c.classList.toggle('active',i===idx);});
+      steps.forEach(function(s,i){s.classList.toggle('on',i===idx);});
+    }
+    setActive(0);
+    var st=gsap.to(track,{x:function(){return -dist();},ease:'none',
+      scrollTrigger:{trigger:pin,start:'top top',end:function(){return '+='+dist();},pin:true,scrub:1,anticipatePin:1,invalidateOnRefresh:true,
+        snap:{snapTo:1/(N-1),duration:{min:.18,max:.5},ease:'power2.inOut',delay:.03},
+        onUpdate:function(self){ if(prog) prog.style.width=(self.progress*100)+'%'; setActive(self.progress); }}});
+    return function(){ phasesSec.classList.remove('snapping'); if(st.scrollTrigger)st.scrollTrigger.kill(); st.kill(); gsap.set(track,{x:0}); cards.forEach(function(c){c.classList.remove('active');}); };
+  });
+
+  ScrollTrigger.refresh();
+})();
+</script>
+</body>
+</html>
