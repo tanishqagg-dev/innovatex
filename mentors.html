@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Become an InnovateX Mentor · Guide funded hardware builds at IIT Delhi's CMF</title>
+<meta name="description" content="A mentor track for Masters, PhD and graduate researchers. Guide InnovateX 2026 student builds, gain mentorship and exposure from Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate of completion from IIT Delhi CMF and Project GRID." />
+<meta property="og:title" content="Become an InnovateX Mentor" />
+<meta property="og:description" content="Mentor Masters/PhD-level. Guide funded student hardware builds, learn under Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate from IIT Delhi CMF and GRID." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFFFFF'/%3E%3Cline x1='24' y1='22' x2='78' y2='78' stroke='%2316273C' stroke-width='15'/%3E%3Cline x1='78' y1='22' x2='24' y2='78' stroke='%2316B6EA' stroke-width='15'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<script>
+  (function(){ var r=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!r){ document.documentElement.classList.add('anim'); window.__af=setTimeout(function(){document.documentElement.classList.remove('anim');},2800); } })();
+</script>
+<style>
+  :root{
+    --paper:#FFFFFF; --grey:#F3F5F8; --grey-2:#E9EDF2; --grey-3:#DCE3EB; --icy:#E7F4FB;
+    --navy:#13243A; --ink:#17273C; --ink-2:#52637A; --ink-3:#8893A2;
+    --line:rgba(19,36,58,.10); --line-2:rgba(19,36,58,.16);
+    --cyan:#0096D8; --cyan-deep:#007BBE; --cyan-bright:#16B6EA;
+    --t-d:#EAF1F8; --t-d2:#A2B4C9;
+    --font:"Untitled Sans","Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+    --enter:cubic-bezier(.16,.84,.34,1); --standard:cubic-bezier(.2,0,0,1);
+    --nav-h:66px; --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav-h) + 14px)}
+  html:not(.anim){scroll-behavior:smooth}
+  body{font-family:var(--font);background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  ::selection{background:var(--cyan);color:#fff}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  :focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:3px}
+  .skip{position:absolute;left:-9999px;top:8px;z-index:300;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;font-weight:600}
+  .skip:focus{left:14px}
+
+  h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.04;color:var(--navy)}
+  h2{font-size:clamp(2rem,4.6vw,3.3rem);letter-spacing:-.03em;line-height:1.03}
+  h3{font-size:1.16rem;font-weight:700;letter-spacing:-.02em;line-height:1.22;color:var(--navy)}
+  .lead{font-size:clamp(1.05rem,1.55vw,1.22rem);color:var(--ink-2);max-width:60ch;line-height:1.55}
+  .eyebrow{font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan-deep);display:inline-flex;align-items:center;gap:.6em}
+  .eyebrow::before{content:"";width:24px;height:1px;background:currentColor;opacity:.7}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* logo */
+  .logo{display:inline-flex;align-items:baseline;gap:.04em;font-weight:800;letter-spacing:-.045em;color:var(--navy);line-height:1;white-space:nowrap}
+  .logo .lx{display:inline-block;height:.82em;width:auto;align-self:baseline;transform:translateY(.025em)}
+  .logo .lx .nv{fill:#293F54} .logo .lx .cy{fill:#04AAD6}
+
+  /* nav */
+  header.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;background:rgba(255,255,255,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s var(--standard),background .3s var(--standard)}
+  header.nav.scrolled{border-bottom-color:var(--line);background:rgba(255,255,255,.93)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+  .nav .logo{font-size:1.22rem;min-height:44px}
+  .navlinks{display:flex;align-items:center;gap:30px}
+  .navlinks a:not(.btn){font-size:.88rem;font-weight:500;color:var(--ink-2);transition:color .15s var(--standard);padding:6px 0;position:relative}
+  .navlinks a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--standard)}
+  .navlinks a:not(.btn):hover{color:var(--navy)} .navlinks a:not(.btn):hover::after{transform:scaleX(1)}
+  .navlinks a[aria-current="page"]{color:var(--navy)} .navlinks a[aria-current="page"]::after{transform:scaleX(1)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-weight:700;font-size:.94rem;letter-spacing:-.01em;padding:11px 22px;border-radius:100px;cursor:pointer;border:1.5px solid transparent;min-height:44px;transition:background .15s var(--standard),transform .12s var(--standard),border-color .15s var(--standard),box-shadow .2s var(--standard)}
+  .btn-primary{background:var(--cyan);color:#fff;box-shadow:0 6px 18px rgba(0,150,216,.28)}
+  .btn-primary:hover{background:var(--cyan-deep);box-shadow:0 10px 26px rgba(0,150,216,.36)}
+  .btn-primary:active{transform:scale(.97)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line-2)}
+  .btn-ghost:hover{border-color:var(--navy)}
+  .btn .arr{transition:transform .15s var(--standard)}
+  .btn:hover .arr{transform:translateX(3px)}
+  .navtoggle{display:none;background:none;border:0;cursor:pointer;padding:10px;flex-direction:column;gap:5px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+  .navtoggle span{display:block;width:22px;height:2px;background:var(--navy);transition:.25s var(--standard)}
+
+  /* hero */
+  .hero{position:relative;background:var(--paper);overflow:hidden;padding:calc(var(--nav-h) + 64px) 0 64px;min-height:100svh;display:flex;align-items:center;text-align:center}
+  .hero::after{content:"";position:absolute;left:50%;bottom:0;width:150%;height:44%;transform:translateX(-50%);background:var(--grey);z-index:0;clip-path:ellipse(58% 100% at 50% 100%);opacity:.55}
+  .hero .wrap{position:relative;z-index:2;width:100%}
+  .hero-eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+  .hero-eyebrow b{color:var(--cyan-deep)}
+  .hero-logo{margin:22px auto 0;display:flex;justify-content:center}
+  .hero-logo .logo{font-size:clamp(3rem,9.5vw,7rem)}
+  .hero h1{font-size:clamp(1.75rem,3.6vw,2.9rem);font-weight:800;letter-spacing:-.03em;line-height:1.08;color:var(--navy);max-width:20ch;margin:22px auto 0}
+  .hero h1 em{font-style:normal;color:var(--cyan-deep)}
+  .hero .sub{margin:18px auto 0;max-width:58ch;color:var(--ink-2);font-size:clamp(1.02rem,1.4vw,1.15rem)}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+
+  /* co-organiser logo lockup */
+  .orgs{display:flex;flex-direction:column;align-items:center;gap:20px}
+  .orgs-label{font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-3)}
+  .orgs-row{display:flex;align-items:center;gap:30px;flex-wrap:wrap;justify-content:center}
+  .orglock{display:flex;align-items:center;gap:28px}
+  .orglock img{height:54px;width:auto;object-fit:contain;display:block}
+  .orglock .gridimg{height:58px}
+  .orglock .div{width:1px;height:48px;background:var(--line-2)}
+  .orgs-row .amp{color:var(--ink-3);font-weight:600;font-size:1.3rem}
+
+  .fx{will-change:transform,opacity}
+  .anim .fx{opacity:0}
+  .anim .reveal{opacity:0}
+
+  /* sections */
+  section{padding:clamp(66px,8vw,120px) 0;position:relative}
+  .s-paper{background:var(--paper)} .s-grey{background:var(--grey)} .s-icy{background:var(--icy)}
+  .s-navy{background:var(--navy);color:var(--t-d)}
+  .s-navy h2,.s-navy h3{color:#fff}.s-navy .lead{color:var(--t-d2)}.s-navy .eyebrow{color:var(--cyan-bright)}
+  .head{max-width:700px}.head .eyebrow{margin-bottom:18px}.head .lead{margin-top:18px}
+  .reveal-mask{overflow:hidden;display:block}
+
+  /* image placeholder */
+  .ph{position:relative;background:linear-gradient(135deg,var(--grey) 0%,var(--grey-2) 100%);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--ink-3);min-height:160px}
+  .ph::after{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 11px,rgba(19,36,58,.022) 11px,rgba(19,36,58,.022) 22px);pointer-events:none}
+  .ph svg{width:30px;height:30px;stroke:var(--ink-3);fill:none;stroke-width:1.6;opacity:.7}
+  .ph .cap{font-size:.74rem;letter-spacing:.04em;font-weight:600;color:var(--ink-3)}
+  .ph.cyan{background:linear-gradient(135deg,#E7F4FB 0%,#D3ECF8 100%);border-color:rgba(0,150,216,.18)}
+  .ph.cyan svg,.ph.cyan .cap{stroke:var(--cyan-deep);color:var(--cyan-deep)}
+
+  /* credibility band */
+  .cred{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 18px 50px rgba(19,36,58,.06)}
+  .cred .c{padding:38px 26px;border-right:1px solid var(--line)}
+  .cred .c:last-child{border-right:0}
+  .cred .v{font-size:clamp(2.3rem,4.6vw,3.4rem);font-weight:800;letter-spacing:-.04em;line-height:.9;color:var(--navy)}
+  .cred .v em{font-style:normal;color:var(--cyan)}
+  .cred .l{margin-top:12px;font-size:.92rem;color:var(--ink-2);max-width:22ch}
+  .mentor-cred .v{font-size:clamp(1.45rem,2.5vw,1.95rem);letter-spacing:-.025em;line-height:1.05}
+  .mentor-cred .l{max-width:27ch}
+  .mentor-cred .l b{color:var(--navy);font-weight:700}
+
+  /* connecting spine through the 01-02-03 sequence */
+  .deflist-wrap{position:relative}
+  .deflist-wrap .spine{position:absolute;left:14px;top:15px;bottom:42px;width:2px;background:linear-gradient(var(--cyan-bright),var(--cyan));transform:scaleY(0);transform-origin:top center;border-radius:2px}
+  .deflist .dn{position:relative;z-index:1}
+
+  /* photo sweep */
+  .cmf-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);box-shadow:0 16px 44px rgba(19,36,58,.08)}
+  .cmf-photo img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);transition:transform .6s var(--enter)}
+  .cmf-media:hover .cmf-photo img{transform:scale(1.06)}
+  .cmf-media .ph::before,.cmf-photo::before{content:"";position:absolute;top:0;bottom:0;width:38%;left:-50%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-12deg);opacity:0;z-index:2;pointer-events:none}
+  .cmf-media .ph.scan::before,.cmf-photo.scan::before{animation:sweep 1.5s var(--enter) forwards}
+  @keyframes sweep{0%{left:-50%;opacity:0}14%{opacity:1}82%{opacity:1}100%{left:130%;opacity:0}}
+
+  /* editorial deflist */
+  .editorial{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .deflist{list-style:none;margin-top:6px}
+  .deflist li{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;transition:transform .25s var(--standard)}
+  .deflist li:hover{transform:translateX(4px)}
+  .deflist li:first-child{border-top:0;padding-top:0}
+  .deflist .dn{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--paper);border:1.5px solid rgba(0,150,216,.28);box-shadow:0 2px 8px rgba(19,36,58,.06);font-size:.72rem;font-weight:700;color:var(--cyan-deep);letter-spacing:.04em}
+  .deflist h3{margin-bottom:6px}.deflist p{color:var(--ink-2);font-size:.98rem;max-width:46ch}
+
+  /* CMF / feature section */
+  .cmf-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+  .cmf-media{position:relative}
+  .cmf-media .ph{min-height:380px;border-radius:20px}
+  .cmf-badge{position:absolute;left:18px;bottom:18px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 10px 30px rgba(19,36,58,.12)}
+  .cmf-badge img{height:30px;width:auto}
+  .cmf-badge span{font-size:.78rem;font-weight:600;color:var(--ink-2);line-height:1.2}
+  .cmf-feats{list-style:none;margin-top:26px}
+  .cmf-feats li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+  .cmf-feats li:first-child{border-top:0}
+  .cmf-feats .fi{width:38px;height:38px;border-radius:10px;background:var(--icy);display:flex;align-items:center;justify-content:center;flex:none}
+  .cmf-feats .fi svg{width:19px;height:19px;stroke:var(--cyan-deep);fill:none;stroke-width:1.7}
+  .cmf-feats h3{font-size:1.04rem;margin-bottom:3px}
+  .cmf-feats p{font-size:.94rem;color:var(--ink-2);max-width:42ch}
+
+  /* domain pills */
+  .deliv{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .deliv li{font-size:.78rem;font-weight:600;color:var(--cyan-deep);background:rgba(0,150,216,.08);border:1px solid rgba(0,150,216,.16);border-radius:100px;padding:7px 14px}
+  .figcap{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);text-align:center;margin-bottom:8px}
+
+  /* scope (do / don't) */
+  .scope{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;margin-top:38px;box-shadow:0 14px 40px rgba(19,36,58,.05);position:relative}
+  .scope .col{padding:36px}.scope .col+.col{border-left:1px solid var(--line)}
+  .scope .col h3{display:flex;align-items:center;gap:11px;margin-bottom:18px;font-size:1.1rem}
+  .scope .bd{width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex:none}
+  .scope .bd svg{width:15px;height:15px;stroke-width:2.4;fill:none}
+  .scope .do .bd{background:rgba(0,150,216,.13)} .scope .do .bd svg{stroke:var(--cyan-deep)}
+  .scope .dont .bd{background:rgba(19,36,58,.07)} .scope .dont .bd svg{stroke:var(--ink-3)}
+  .scope ul{list-style:none}
+  .scope li{padding:13px 0;border-top:1px solid var(--line);display:flex;gap:12px;color:var(--ink-2);font-size:.97rem}
+  .scope li:first-of-type{border-top:0}
+  .scope li svg{width:18px;height:18px;flex:none;margin-top:2px;stroke-width:2;fill:none}
+  .scope .do li svg{stroke:var(--cyan-deep)} .scope .dont li svg{stroke:var(--ink-3)}
+  .bshield{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:50px;height:58px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:14px;box-shadow:0 10px 28px rgba(19,36,58,.12)}
+  .bshield svg{width:28px;height:28px;stroke:var(--cyan-deep);fill:rgba(0,150,216,.08);stroke-width:1.7}
+  .bline{position:absolute;left:50%;top:8%;bottom:8%;width:2px;background:repeating-linear-gradient(var(--cyan) 0 7px,transparent 7px 14px);transform:translateX(-50%);transform-origin:top;z-index:2;opacity:.8}
+  @media(max-width:720px){ .bshield,.bline{display:none} }
+
+  /* eligibility facts */
+  .facts2{list-style:none}
+  .facts2 li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line);font-size:1.02rem;color:var(--ink-2)}
+  .facts2 li:first-child{border-top:0}.facts2 li b{color:var(--navy);font-weight:700}
+  .facts2 li svg{width:20px;height:20px;flex:none;margin-top:3px;stroke:var(--cyan-deep);fill:none;stroke-width:1.8}
+
+  /* faq */
+  .faq{max-width:840px;margin:0 auto}
+  .qa{border-top:1px solid var(--line)}.qa:last-child{border-bottom:1px solid var(--line)}
+  .qa button{width:100%;background:none;border:0;cursor:pointer;text-align:left;padding:23px 8px;display:flex;align-items:center;justify-content:space-between;gap:20px;font-family:inherit;font-size:1.08rem;font-weight:600;letter-spacing:-.015em;color:var(--navy);min-height:44px;transition:color .2s}
+  .qa button:hover{color:var(--cyan-deep)}
+  .qa .pm{position:relative;width:18px;height:18px;flex:none}
+  .qa .pm::before,.qa .pm::after{content:"";position:absolute;background:var(--cyan);transition:transform .25s var(--standard)}
+  .qa .pm::before{top:50%;left:0;right:0;height:2px;transform:translateY(-50%)}
+  .qa .pm::after{left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%)}
+  .qa[aria-expanded="true"] .pm::after{transform:translateX(-50%) rotate(90deg);opacity:0}
+  .qa .ans{max-height:0;overflow:hidden;transition:max-height .3s var(--standard)}
+  .qa .ans p{padding:0 8px 23px;color:var(--ink-2);max-width:66ch;font-size:1rem}
+
+  /* cta */
+  .cta{padding:clamp(70px,9vw,120px) 0}
+  .cta-card{background:var(--navy);border-radius:28px;padding:clamp(44px,6vw,80px);text-align:center;position:relative;overflow:hidden}
+  .cta-card h2{color:#fff;font-size:clamp(2.1rem,5vw,3.6rem);max-width:18ch;margin:0 auto}
+  .cta-card .lead{margin:18px auto 32px;color:var(--t-d2);text-align:center}
+  .cta-card .hero-cta{justify-content:center}
+  .cta-card .eyebrow{color:var(--cyan-bright);justify-content:center;margin-bottom:14px}
+  .cta-card .help{margin-top:22px;font-size:.86rem;color:var(--t-d2)}
+  .cta-card .help a{color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.4)}
+
+  footer{background:var(--paper);color:var(--ink-2);padding:56px 0 40px;border-top:1px solid var(--line)}
+  .foot{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+  .foot .logo{font-size:1.4rem;margin-bottom:8px}
+  .foot p{font-size:.86rem;max-width:42ch;line-height:1.6;margin-top:10px}
+  .foot .links{display:flex;gap:26px;flex-wrap:wrap}
+  .foot .links a{font-size:.86rem;color:var(--ink-2);transition:color .15s}.foot .links a:hover{color:var(--navy)}
+  .foot-chips{display:flex;gap:11px;flex-wrap:wrap;margin-top:16px}
+  .foot-chips .chip{height:50px;padding:9px 15px;background:#fff;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center}
+  .foot-chips .chip img{height:28px;width:auto;object-fit:contain}
+  .foot-chips .chip.grid img{height:24px}
+  .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3);letter-spacing:.02em}
+
+  @media(max-width:940px){
+    .hero{min-height:auto;padding:calc(var(--nav-h) + 48px) 0 56px}
+    .editorial,.cmf-grid{grid-template-columns:1fr;gap:34px}
+    .cred{grid-template-columns:1fr 1fr}.cred .c:nth-child(2){border-right:0}.cred .c:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .cmf-media .ph{min-height:300px}
+  }
+  @media(max-width:720px){
+    .navlinks{position:fixed;top:var(--nav-h);left:0;right:0;flex-direction:column;gap:0;background:#fff;padding:8px 28px 22px;transform:translateY(-130%);transition:transform .3s var(--standard);border-bottom:1px solid var(--line);align-items:stretch}
+    .navlinks.open{transform:translateY(0)}
+    .navlinks a:not(.btn){padding:15px 0;border-bottom:1px solid var(--line);font-size:1rem;color:var(--navy)}
+    .navlinks .btn{margin-top:14px}
+    .navtoggle{display:flex}
+    .navtoggle.on span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .navtoggle.on span:nth-child(2){opacity:0}
+    .navtoggle.on span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    .scope{grid-template-columns:1fr}
+    .scope .col+.col{border-left:0;border-top:1px solid var(--line)}
+  }
+  @media(max-width:520px){
+    .cred{grid-template-columns:1fr}.cred .c{border-right:0;border-bottom:1px solid var(--line)}.cred .c:last-child{border-bottom:0}
+    .wrap{padding:0 20px}
+    .orgs-row{gap:18px}.orglock{gap:16px}.orglock img{height:34px}.orglock .gridimg{height:40px}.orglock .div{height:32px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="InnovateX home">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></a>
+    <nav class="navlinks" id="navlinks" aria-label="Primary">
+      <a href="index.html#programme">Programme</a>
+      <a href="index.html#cmf">Where you build</a>
+      <a href="index.html#process">Phases</a>
+      <a href="index.html#eligibility">Eligibility</a>
+      <a href="#faq">FAQ</a>
+      <a href="mentors.html" aria-current="page">Become a Mentor</a>
+      <!-- PLACEHOLDER: replace the href below with your Google Form link for mentor registration -->
+      <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+    </nav>
+    <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="orgs fx">
+      <span class="orgs-label">A mentor track by</span>
+      <div class="orgs-row">
+        <span class="orglock">
+          <img src="assets/CMF-Logo-CW4iBhSi.png" alt="IIT Delhi CMF (Central Manufacturing Facility)" width="110" height="44">
+        </span>
+        <span class="amp" aria-hidden="true">&amp;</span>
+        <span class="orglock"><img class="gridimg" src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="72" height="36"></span>
+      </div>
+    </div>
+    <p class="hero-eyebrow fx" style="margin-top:30px">Mentor Registration · <b>InnovateX 2026</b></p>
+    <h1 class="fx">Mentor the people building India's next <em>hardware</em>.</h1>
+    <p class="sub fx">A selective mentor track, just fifteen places, for Masters, PhD and graduate researchers. Guide funded student builds, gain mentorship and exposure from Prof. Sunil Jha, Head of IIT Delhi's Central Manufacturing Facility, and earn a certificate of completion from IIT Delhi CMF and Project GRID.</p>
+    <div class="hero-cta fx">
+      <!-- PLACEHOLDER: replace the href with your Google Form link -->
+      <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#role">See what mentors do</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE BAND -->
+<section class="s-grey" aria-label="What mentoring gives you" style="padding:clamp(48px,6vw,72px) 0">
+  <div class="wrap">
+    <div class="cred mentor-cred reveal">
+      <div class="c"><div class="v"><em>Certificate</em></div><div class="l">Of completion, signed by <b>IIT Delhi CMF &amp; GRID</b>.</div></div>
+      <div class="c"><div class="v"><em>Mentorship</em></div><div class="l">From <b>Prof. Sunil Jha</b>, Head of CMF, IIT Delhi.</div></div>
+      <div class="c"><div class="v"><em>Exposure</em></div><div class="l">Mentees exhibit before <b>government, academia &amp; industry</b>.</div></div>
+      <div class="c"><div class="v"><em>1 of 15</em></div><div class="l">Mentors chosen for the cohort, backed by <b>IIT Delhi CMF &amp; GRID</b>.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'RE JOINING -->
+<section id="programme" class="s-paper">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="head">
+        <span class="eyebrow reveal">What you're joining</span>
+        <h2 class="reveal-mask"><span class="reveal-line">A funded programme that takes thirty students from idea to a real product.</span></h2>
+        <p class="lead reveal">InnovateX gives thirty Indian students the money, the workshop, and the audience to finish one hardware product each, built at IIT Delhi's Central Manufacturing Facility and exhibited on 19 September 2026. As a mentor, you help make sure they get there.</p>
+        <a class="btn btn-ghost reveal" href="index.html#programme" style="margin-top:24px">See the full programme <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="deflist-wrap">
+        <span class="spine" aria-hidden="true"></span>
+        <ol class="deflist">
+          <li><span class="dn">01</span><div><h3>Thirty individuals, fully funded</h3><p>Each student is selected across India and builds alone. Their approved bill of materials is funded end to end.</p></div></li>
+          <li><span class="dn">02</span><div><h3>Five phases, June to September</h3><p>From a written pitch to a finished unit: pitch, design, BOM approval, build, and exhibition.</p></div></li>
+          <li><span class="dn">03</span><div><h3>Built at IIT Delhi's CMF</h3><p>Students get supervised access to the Central Manufacturing Facility and exhibit before government, academia, and industry.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MENTOR -->
+<section class="s-icy">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="head">
+        <span class="eyebrow reveal">Why mentor</span>
+        <h2 class="reveal-mask"><span class="reveal-line">What you get out of it.</span></h2>
+        <p class="lead reveal">Mentoring at InnovateX is built to give back as much as you put in.</p>
+      </div>
+      <ul class="cmf-feats reveal">
+        <li><span class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M9 13.4L7 22l5-3 5 3-2-8.6"/></svg></span><div><h3>Mentorship from Prof. Sunil Jha</h3><p>Direct guidance and exposure from the Head of IIT Delhi's Central Manufacturing Facility, alongside the wider CMF and GRID network.</p></div></li>
+        <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M14 3v5h5"/><path d="M7 3h7l5 5v11a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 14l2 2 3-3"/></svg></span><div><h3>A certificate from IIT Delhi CMF &amp; GRID</h3><p>Complete the programme and receive a certificate of completion, co-signed by IIT Delhi CMF and Project GRID.</p></div></li>
+        <li><span class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></span><div><h3>A portfolio of guided builds</h3><p>Add real, finished hardware projects you helped shape to your academic and professional record.</p></div></li>
+        <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M4 21h16M7 21v-5h10v5M9 16V8h6v8M5 8l7-5 7 5"/></svg></span><div><h3>Your work, on the exhibition floor</h3><p>The students you guide present their finished units before an audience from government, academia, and industry.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- LEARN UNDER PROF. SUNIL JHA -->
+<section class="s-paper">
+  <div class="wrap">
+    <div class="cmf-grid">
+      <div class="cmf-media reveal">
+        <!-- PLACEHOLDER: drop a photo of Prof. Sunil Jha into assets/ and swap this .ph block for an <img> -->
+        <div class="ph cyan" style="min-height:380px;border-radius:20px">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0"/></svg>
+          <span class="cap">Prof. Sunil Jha · photo</span>
+        </div>
+        <div class="cmf-badge"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="80" height="30"><span>Head, Central Manufacturing<br>Facility · IIT Delhi</span></div>
+      </div>
+      <div>
+        <span class="eyebrow reveal">Who you'll learn from</span>
+        <h2 class="reveal-mask" style="margin-top:14px"><span class="reveal-line">Mentorship from Prof. Sunil Jha.</span></h2>
+        <p class="lead reveal" style="margin-top:16px">Prof. Sunil Jha heads IIT Delhi's Central Manufacturing Facility, the institute's central hub for precision fabrication and manufacturing. As an InnovateX mentor, you work within that orbit: you mentor students, and you are mentored in turn.</p>
+        <ul class="cmf-feats reveal">
+          <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4-3.4 7.4-8 8-4.6-.6-8-4-8-8V7z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>How to review like an engineer</h3><p>Learn to challenge a design and a bill of materials the way the CMF does, rigorously and constructively.</p></div></li>
+          <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Exposure to a manufacturing ecosystem</h3><p>See how real products move from concept to a repeatable unit at one of India's leading institutes.</p></div></li>
+          <li><span class="fi"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0"/></svg></span><div><h3>Recognition in the mentor cohort</h3><p>Stand alongside a curated group of graduate mentors, recognised by IIT Delhi CMF and GRID.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE'RE LOOKING FOR -->
+<section id="who" class="s-grey">
+  <div class="wrap">
+    <div class="editorial">
+      <div class="head">
+        <span class="eyebrow reveal">Who we're looking for</span>
+        <h2 class="reveal-mask"><span class="reveal-line">If you know how hardware really gets made, you can mentor.</span></h2>
+        <p class="lead reveal">We're inviting graduate-level minds in academia who can review engineering work with real depth and give students honest, useful feedback. Just fifteen mentors are selected in total.</p>
+      </div>
+      <ul class="facts2 reveal">
+        <li><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v6l9 4 9-4V7"/></svg><span><b>Masters, PhD and graduate researchers</b>, and early-career faculty, in academia.</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 2l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></svg><span>Real <b>domain depth</b> in a hardware-relevant field.</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg><span>Willing to <b>review and challenge</b> student work across the phases.</span></li>
+        <li><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>Ready to give <b>honest, specific feedback</b> that keeps students the authors.</span></li>
+      </ul>
+    </div>
+    <p class="figcap" style="margin-top:50px">Fields we're especially keen on</p>
+    <ul class="deliv reveal" style="justify-content:center;max-width:780px;margin:14px auto 0">
+      <li>Mechanical &amp; design</li>
+      <li>Electronics &amp; embedded</li>
+      <li>Robotics &amp; mechatronics</li>
+      <li>Materials</li>
+      <li>Power &amp; energy</li>
+      <li>Sensors &amp; instrumentation</li>
+      <li>Product / industrial design</li>
+    </ul>
+  </div>
+</section>
+
+<!-- YOUR ROLE (scope) -->
+<section id="role" class="s-paper">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal">Your role</span>
+      <h2 class="reveal-mask"><span class="reveal-line">You guide the build. You never take it over.</span></h2>
+      <p class="lead reveal">The work, and the credit, stays with the student. Your job is to make their thinking sharper, not to do it for them.</p>
+    </div>
+    <div class="scope reveal">
+      <span class="bline" aria-hidden="true"></span>
+      <span class="bshield" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4-3.5 7.5-8 9-4.5-1.5-8-5-8-9V6z"/><path d="M9 12l2 2 4-4" stroke-width="2"/></svg></span>
+      <div class="col do">
+        <h3><span class="bd"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg></span>What you do</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Review the work each student submits</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Flag errors and unsound assumptions</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Point them to prior art and literature</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Suggest directions worth investigating</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 13l4 4L19 7"/></svg>Answer their specific technical questions</li>
+        </ul>
+      </div>
+      <div class="col dont">
+        <h3><span class="bd"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>What you won't do</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Design any subsystem for them</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Hand over your own code or schematics</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Fabricate or assemble on their behalf</li>
+          <li><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>Produce layouts or models for them</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW MENTORING MAPS TO THE PROGRAMME -->
+<section class="s-icy">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal">Across the programme</span>
+      <h2 class="reveal-mask"><span class="reveal-line">Where a mentor makes the difference.</span></h2>
+      <p class="lead reveal">InnovateX runs in five phases between June and September 2026. These are the moments where a mentor's eye matters most. Your exact involvement is confirmed when you register.</p>
+    </div>
+    <div class="deflist-wrap" style="margin-top:42px;max-width:760px">
+      <span class="spine" aria-hidden="true"></span>
+      <ol class="deflist">
+        <li><span class="dn">01</span><div><h3>Pitch · from June</h3><p>Help judge whether an idea is real, genuinely new, and buildable.</p></div></li>
+        <li><span class="dn">02</span><div><h3>Design · July</h3><p>Sanity-check 3D models, schematics, and PCB layouts before anything is ordered.</p></div></li>
+        <li><span class="dn">03</span><div><h3>BOM · August</h3><p>Pressure-test the bill of materials for cost, feasibility, and a path to scale.</p></div></li>
+        <li><span class="dn">04</span><div><h3>Build · August → September</h3><p>Answer technical questions as students assemble, debug, and calibrate.</p></div></li>
+        <li><span class="dn">05</span><div><h3>Exhibition · 19 September 2026</h3><p>The students you guided present their finished units at the InnovateX exhibition.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="s-paper">
+  <div class="wrap">
+    <div class="head" style="text-align:center;margin:0 auto 44px;max-width:560px"><span class="eyebrow reveal" style="justify-content:center">Questions, answered</span><h2 class="reveal" style="margin:14px auto 0">Mentor FAQ</h2></div>
+    <div class="faq">
+      <div class="qa reveal"><button aria-expanded="false">Who can become a mentor?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Masters and PhD students, graduate researchers, and early-career faculty in academia, with real depth in a hardware-relevant field: mechanical, electronics and embedded, robotics, materials, power, instrumentation, or product design.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">What does the mentor role involve, and what's provided?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Full details of the role are being finalised and will be shared with you when you register. What is already confirmed: you receive mentorship and exposure from Prof. Sunil Jha and the CMF and GRID network, and a certificate of completion from IIT Delhi CMF and GRID.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">How much time does it take?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Mentoring follows the programme's five phases between June and September 2026, around the review points. The exact time commitment is confirmed when you register, and is designed to fit around graduate study and research.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I need to be at IIT Delhi CMF?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Where and how mentoring happens is being finalised and will be shared on registration, so it's fine if you're not in Delhi. The student exhibition itself is hosted by IIT Delhi CMF.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">What will I be mentoring?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Hardware-led student projects in or near your domain: a defined physical product taken from a written pitch to a working, exhibited unit. You guide; the student builds.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I really get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every mentor who completes the programme receives a certificate of completion, co-signed by IIT Delhi CMF and Project GRID.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">How are mentors matched to students?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>By domain. After you register, we aim to match you with students whose projects sit closest to your expertise, so your feedback is as useful as possible. Final matching is confirmed once the cohort is selected.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">I have a question that isn't here.<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Email <a href="mailto:info@projectgrid.org" style="color:var(--cyan-deep);font-weight:600">info@projectgrid.org</a> and we'll help you out.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REGISTER -->
+<section id="register" class="cta s-paper">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <span class="eyebrow">Mentor registration · open now</span>
+      <h2>Lend your expertise. Grow your own.</h2>
+      <p class="lead">Register as an InnovateX mentor, guide a funded build, and earn a certificate of completion from IIT Delhi CMF and GRID.</p>
+      <div class="hero-cta">
+        <!-- PLACEHOLDER: replace the href with your Google Form link -->
+        <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="mailto:info@projectgrid.org?subject=InnovateX%20Mentor%20enquiry" style="color:#fff;border-color:rgba(255,255,255,.3)">Email info@projectgrid.org</a>
+      </div>
+      <p class="help">Questions before you apply? Reach us at <a href="mailto:info@projectgrid.org">info@projectgrid.org</a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="max-width:380px">
+        <a class="logo" href="index.html" aria-label="InnovateX home">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></a>
+        <p>A hardware product development programme, co-organised by the Central Manufacturing Facility (IIT Delhi) and Project GRID.</p>
+        <div class="foot-chips">
+          <span class="chip"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="IIT Delhi CMF (Central Manufacturing Facility)" width="120" height="50" loading="lazy"></span>
+          <span class="chip grid"><img src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="80" height="50" loading="lazy"></span>
+        </div>
+      </div>
+      <nav class="links" aria-label="Footer">
+        <a href="index.html#programme">Programme</a><a href="index.html#cmf">Where you build</a><a href="index.html#process">Phases</a><a href="index.html#eligibility">Eligibility</a><a href="#faq">Mentor FAQ</a><a href="mentors.html">Become a Mentor</a><a href="#register">Register</a>
+      </nav>
+    </div>
+    <div class="legal"><span>© 2026 Project GRID &amp; CMF, IIT Delhi</span><span>Innovation · Engineering · Impact</span></div>
+  </div>
+</footer>
+
+<script src="assets/gsap.min.js"></script>
+<script src="assets/ScrollTrigger.min.js"></script>
+<script src="assets/lenis.min.js"></script>
+<script>
+(function(){
+  var root=document.documentElement;
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGSAP=!!(window.gsap&&window.ScrollTrigger);
+
+  var nav=document.getElementById('nav'),toggle=document.getElementById('navtoggle'),links=document.getElementById('navlinks');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY>10); }
+  onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+  toggle.addEventListener('click',function(){var o=links.classList.toggle('open');toggle.classList.toggle('on',o);toggle.setAttribute('aria-expanded',o);toggle.setAttribute('aria-label',o?'Close menu':'Open menu');});
+  document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
+
+  function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
+
+  if(reduce||!hasGSAP){
+    clearTimeout(window.__af); root.classList.remove('anim');
+    instantCount();
+    return;
+  }
+  clearTimeout(window.__af);
+  gsap.registerPlugin(ScrollTrigger);
+
+  var lenis=null;
+  if(window.Lenis){
+    lenis=new Lenis({lerp:.095,smoothWheel:true});
+    lenis.on('scroll',ScrollTrigger.update);
+    gsap.ticker.add(function(t){lenis.raf(t*1000);});
+    gsap.ticker.lagSmoothing(0);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var el=document.querySelector(id);if(!el)return;e.preventDefault();links.classList.remove('open');toggle.classList.remove('on');toggle.setAttribute('aria-expanded','false');if(lenis)lenis.scrollTo(el,{offset:-66});else el.scrollIntoView();});});
+
+  /* hero build */
+  var tl=gsap.timeline({defaults:{ease:'power3.out'}});
+  tl.fromTo('.hero .orgs',{opacity:0,y:12},{opacity:1,y:0,duration:.6})
+    .fromTo('.hero-eyebrow,.hero h1,.hero .sub,.hero .hero-cta',{opacity:0,y:20},{opacity:1,y:0,duration:.6,stagger:.1},'-=.3');
+
+  /* masked + fade reveals */
+  gsap.utils.toArray('.reveal-line').forEach(function(line){
+    gsap.fromTo(line,{yPercent:115},{yPercent:0,duration:.9,ease:'power4.out',scrollTrigger:{trigger:line,start:'top 88%'}});
+  });
+  gsap.utils.toArray('.reveal').forEach(function(el){
+    gsap.fromTo(el,{y:30,opacity:0},{y:0,opacity:1,duration:.7,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+
+  /* draw-on checklist: mentor scope ticks/crosses draw in, row by row */
+  gsap.utils.toArray('.scope .col').forEach(function(box){
+    var paths=box.querySelectorAll('li svg path, h3 svg path');
+    var rows=box.querySelectorAll('li');
+    paths.forEach(function(p){ if(!p.getTotalLength)return; var len=p.getTotalLength()||1; gsap.set(p,{strokeDasharray:len,strokeDashoffset:len}); });
+    gsap.set(rows,{x:16});
+    ScrollTrigger.create({trigger:box,start:'top 82%',once:true,onEnter:function(){
+      gsap.to(paths,{strokeDashoffset:0,duration:.55,ease:'power2.out',stagger:.08});
+      gsap.to(rows,{x:0,duration:.5,ease:'power3.out',stagger:.08});
+    }});
+  });
+
+  /* deflist: spine draws + each step activates in sequence */
+  gsap.utils.toArray('.deflist-wrap').forEach(function(w){
+    var spine=w.querySelector('.spine');
+    if(spine){ gsap.fromTo(spine,{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:w,start:'top 78%',end:'bottom 72%',scrub:.6}}); }
+  });
+  gsap.utils.toArray('.deflist li').forEach(function(li){
+    var n=li.querySelector('.dn');
+    var t=gsap.timeline({scrollTrigger:{trigger:li,start:'top 84%'}});
+    t.fromTo(li,{opacity:0,x:26},{opacity:1,x:0,duration:.6,ease:'power3.out'})
+     .fromTo(n,{scale:.2},{scale:1,duration:.5,ease:'back.out(2.2)'},'-=.45');
+  });
+
+  /* facts cascade in */
+  gsap.fromTo('.facts2 li',{opacity:0,x:22},{opacity:1,x:0,duration:.5,ease:'power3.out',stagger:.12,scrollTrigger:{trigger:'.facts2',start:'top 82%'}});
+
+  /* portrait machining sweep */
+  ScrollTrigger.create({trigger:'.cmf-media',start:'top 78%',once:true,onEnter:function(){var ph=document.querySelector('.cmf-photo')||document.querySelector('.cmf-media .ph');if(ph)ph.classList.add('scan');}});
+
+  /* hero: subtle depth parallax on exit */
+  gsap.to('.hero .wrap',{yPercent:-7,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:.5}});
+
+  /* counters */
+  document.querySelectorAll('[data-count]').forEach(function(el){
+    var target=+el.getAttribute('data-count'),suffix=el.getAttribute('data-suffix')||'',o={v:0};
+    ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:function(){gsap.to(o,{v:target,duration:1.3,ease:'power2.out',onUpdate:function(){el.textContent=Math.round(o.v)+suffix;}});}});
+  });
+
+  ScrollTrigger.refresh();
+})();
+</script>
+</body>
+</html>
