@@ -1,0 +1,52 @@
+# InnovateX 2026
+
+> InnovateX (InnovateX 2026) is a funded hardware and deep-tech build programme for students in India, co-organised by IIT Delhi's Central Manufacturing Facility (CMF) and Project GRID. Thirty students from across India are each selected to take one product from a written pitch to a working, exhibited unit. There is no fee to apply or take part, and 100% of each participant's approved bill of materials is funded. It is an opportunity for high school and college students who want to build real hardware.
+
+## Who can apply (eligibility)
+- Open to Indian students from Grade 10 (high school) through the fourth year of college (undergraduate) — i.e. high school students (Grade 10, Class 11-12 / higher secondary) and college / university students up to their final year.
+- An individual programme: no teams, one entry per person.
+- Free to pitch and to take part.
+- AI tools are permitted if you disclose how you used them; you remain the author of the work.
+
+## What you can build
+Hardware-led projects, including AI-powered and deep-tech builds. Typical domains: robotics, electronics and embedded systems, instrumentation, mechanical and product design, materials, power, and smart / AI-enabled devices. Hardware leads; software supports.
+
+## Key facts
+- Names: InnovateX, InnovateX 2026
+- Category: funded student hardware / deep-tech product-development programme (AI-enabled hardware welcome)
+- Co-organisers: IIT Delhi CMF (Central Manufacturing Facility) and Project GRID
+- Participants: 30 students across India, selected as individuals (never teams)
+- Audience: high school and college students in India (Grade 10 to final-year undergraduate)
+- Cost: free to pitch and take part; 100% of the approved bill of materials is funded
+- Where it is built: IIT Delhi's Central Manufacturing Facility; final exhibition at the Central Atrium, IIT Delhi
+- Not a competition: no ranking, no single winner; every completed project is exhibited on equal terms
+- Outcome: a funded build, a finished product you own, a certificate, and an exhibition before government, academia, and industry
+
+## Key dates (2026)
+- 10 June — Student applications open
+- 14-19 June — Train the Trainers Bootcamp at IIT Delhi (mentors; on-campus accommodation provided)
+- 30 June — Applications close
+- 5 July to September — Build phase (design, bill-of-materials approval, build)
+- Mid-September — Exhibition at IIT Delhi
+
+## The five phases
+1. Pitch — submit a written product pitch
+2. Define & design — scope the product
+3. BOM review & procurement — approve and fund the bill of materials
+4. Build — build the unit at the CMF
+5. Exhibition — present the finished product
+
+## Mentors
+A mentor track is open to Masters and PhD students, graduate researchers, and early-career faculty with depth in a hardware-relevant field (mechanical, electronics and embedded, robotics, materials, power, instrumentation, or product design). Mentors guide builds, receive mentorship and exposure from Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate of completion co-signed by IIT Delhi CMF and Project GRID. Mentors guide the build but never take it over.
+
+## Pages
+- [Home](https://innovatex.projectgrid.org/): Programme overview, the five phases, eligibility (Grade 10 to final-year college), key dates, and FAQ.
+- [Become a Mentor](https://innovatex.projectgrid.org/mentors.html): Mentor eligibility, what mentors get, the bootcamp, and the mentor FAQ.
+
+## Apply
+- Student pitch registration: https://forms.gle/ojN2HMhWAPydUiBaA
+
+## Contact
+- General: info@projectgrid.org
+- Project GRID: https://projectgrid.org
+- IIT Delhi CMF: https://cmf.iitd.ac.in

@@ -4,11 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>Become an InnovateX Mentor · Guide funded hardware builds at IIT Delhi's CMF</title>
-<meta name="description" content="A mentor track for Masters, PhD and graduate researchers. Guide InnovateX 2026 student builds, gain mentorship and exposure from Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate of completion from IIT Delhi CMF and Project GRID." />
+<meta name="description" content="Mentor track for Masters/PhD researchers: guide funded InnovateX 2026 hardware builds under Prof. Sunil Jha (Head of CMF, IIT Delhi) and earn a certificate." />
 <meta property="og:title" content="Become an InnovateX Mentor" />
 <meta property="og:description" content="Mentor Masters/PhD-level. Guide funded student hardware builds, learn under Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate from IIT Delhi CMF and GRID." />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://innovatex.projectgrid.org/mentors.html" />
+<meta property="og:site_name" content="InnovateX 2026" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:image" content="https://innovatex.projectgrid.org/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Become an InnovateX 2026 mentor at IIT Delhi's CMF" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Become an InnovateX Mentor" />
+<meta name="twitter:description" content="Mentor Masters/PhD-level. Guide funded student hardware builds, learn under Prof. Sunil Jha (Head, CMF, IIT Delhi), and earn a certificate from IIT Delhi CMF and GRID." />
+<meta name="twitter:image" content="https://innovatex.projectgrid.org/assets/og-image.jpg" />
+<meta name="theme-color" content="#13243A" />
+<link rel="canonical" href="https://innovatex.projectgrid.org/mentors.html" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFFFFF'/%3E%3Cline x1='24' y1='22' x2='78' y2='78' stroke='%2316273C' stroke-width='15'/%3E%3Cline x1='78' y1='22' x2='24' y2='78' stroke='%2316B6EA' stroke-width='15'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -133,7 +147,7 @@
   .deflist .dn{position:relative;z-index:1}
 
   /* photo sweep */
-  .cmf-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);box-shadow:0 16px 44px rgba(19,36,58,.08)}
+  .cmf-photo{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:5/6;border:1px solid var(--line);box-shadow:0 16px 44px rgba(19,36,58,.08)}
   .cmf-photo img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);transition:transform .6s var(--enter)}
   .cmf-media:hover .cmf-photo img{transform:scale(1.06)}
   .cmf-media .ph::before,.cmf-photo::before{content:"";position:absolute;top:0;bottom:0;width:38%;left:-50%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-12deg);opacity:0;z-index:2;pointer-events:none}
@@ -193,6 +207,19 @@
   .facts2 li:first-child{border-top:0}.facts2 li b{color:var(--navy);font-weight:700}
   .facts2 li svg{width:20px;height:20px;flex:none;margin-top:3px;stroke:var(--cyan-deep);fill:none;stroke-width:1.8}
 
+  /* bootcamp callout */
+  .bootcamp{display:flex;gap:18px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:16px;padding:24px 26px;margin-top:34px;box-shadow:0 12px 32px rgba(19,36,58,.06)}
+  .bootcamp .bc-ic{width:42px;height:42px;border-radius:11px;background:var(--icy);display:flex;align-items:center;justify-content:center;flex:none}
+  .bootcamp .bc-ic svg{width:21px;height:21px;stroke:var(--cyan-deep);fill:none;stroke-width:1.7}
+  .bootcamp h3{font-size:1.08rem;margin-bottom:5px}
+  .bootcamp p{color:var(--ink-2);font-size:.96rem;max-width:60ch}
+  .bootcamp .bc-date{color:var(--cyan-deep)}
+
+  /* register notice */
+  .reg-notice{margin:22px auto 0;font-size:.96rem;color:#fff;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:11px 22px;display:inline-block;opacity:0;transform:translateY(6px);transition:opacity .35s var(--enter),transform .35s var(--enter)}
+  .reg-notice.show{opacity:1;transform:none}
+  .reg-notice b{color:#fff;font-weight:800}
+
   /* faq */
   .faq{max-width:840px;margin:0 auto}
   .qa{border-top:1px solid var(--line)}.qa:last-child{border-bottom:1px solid var(--line)}
@@ -222,10 +249,16 @@
   .foot p{font-size:.86rem;max-width:42ch;line-height:1.6;margin-top:10px}
   .foot .links{display:flex;gap:26px;flex-wrap:wrap}
   .foot .links a{font-size:.86rem;color:var(--ink-2);transition:color .15s}.foot .links a:hover{color:var(--navy)}
-  .foot-chips{display:flex;gap:11px;flex-wrap:wrap;margin-top:16px}
-  .foot-chips .chip{height:50px;padding:9px 15px;background:#fff;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center}
-  .foot-chips .chip img{height:28px;width:auto;object-fit:contain}
-  .foot-chips .chip.grid img{height:24px}
+  .foot-chips{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+  .foot-chips .chip{height:72px;padding:12px 20px;background:#fff;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center}
+  .foot-chips .chip img{height:44px;width:auto;object-fit:contain}
+  .foot-chips .chip.grid img{height:38px}
+  .foot-right{display:flex;flex-direction:column;gap:30px;align-items:flex-start}
+  .foot-contact h4{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:16px}
+  .contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 44px}
+  .contact-grid .ct{display:flex;flex-direction:column;line-height:1.35}
+  .contact-grid .ct .nm{font-size:.86rem;font-weight:600;color:var(--navy)}
+  .contact-grid .ct a{font-size:.82rem;color:var(--ink-2);transition:color .15s}.contact-grid .ct a:hover{color:var(--cyan-deep)}
   .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3);letter-spacing:.02em}
 
   @media(max-width:940px){
@@ -256,6 +289,121 @@
     html{scroll-behavior:auto}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://innovatex.projectgrid.org/#website",
+      "url": "https://innovatex.projectgrid.org/",
+      "name": "InnovateX 2026",
+      "alternateName": "InnovateX",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://projectgrid.org/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://innovatex.projectgrid.org/mentors.html#webpage",
+      "url": "https://innovatex.projectgrid.org/mentors.html",
+      "name": "Become an InnovateX Mentor",
+      "isPartOf": { "@id": "https://innovatex.projectgrid.org/#website" },
+      "about": { "@id": "https://innovatex.projectgrid.org/mentors.html#sunil-jha" },
+      "primaryImageOfPage": "https://innovatex.projectgrid.org/assets/og-image.jpg",
+      "breadcrumb": { "@id": "https://innovatex.projectgrid.org/mentors.html#breadcrumb" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://cmf.iitd.ac.in/#organization",
+      "name": "Central Manufacturing Facility (CMF), IIT Delhi",
+      "alternateName": "IIT Delhi CMF",
+      "url": "https://cmf.iitd.ac.in",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Delhi",
+        "url": "https://home.iitd.ac.in"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://projectgrid.org/#organization",
+      "name": "Project GRID",
+      "url": "https://projectgrid.org",
+      "email": "info@projectgrid.org"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://innovatex.projectgrid.org/mentors.html#sunil-jha",
+      "name": "Prof. Sunil Jha",
+      "jobTitle": "Head, Central Manufacturing Facility (CMF)",
+      "worksFor": { "@id": "https://cmf.iitd.ac.in/#organization" },
+      "affiliation": { "@id": "https://cmf.iitd.ac.in/#organization" },
+      "email": "suniljha@mech.iitd.ac.in",
+      "url": "https://cmf.iitd.ac.in"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://innovatex.projectgrid.org/mentors.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "InnovateX 2026", "item": "https://innovatex.projectgrid.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Become a Mentor", "item": "https://innovatex.projectgrid.org/mentors.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://innovatex.projectgrid.org/mentors.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who can become a mentor?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Masters and PhD students, graduate researchers, and early-career faculty in academia, with real depth in a hardware-relevant field: mechanical, electronics and embedded, robotics, materials, power, instrumentation, or product design." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the mentor role involve, and what's provided?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Full details of the role are being finalised and will be shared with you when you register. What is already confirmed: you receive mentorship and exposure from Prof. Sunil Jha and the CMF and GRID network, and a certificate of completion from IIT Delhi CMF and GRID." }
+        },
+        {
+          "@type": "Question",
+          "name": "How much time does it take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Mentoring follows the programme's five phases between June and September 2026, around the review points. The exact time commitment is confirmed when you register, and is designed to fit around graduate study and research." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be at IIT Delhi CMF?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Where and how mentoring happens is being finalised and will be shared on registration, so it's fine if you're not in Delhi. The student exhibition itself is hosted by IIT Delhi CMF." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a bootcamp, and is accommodation provided?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Selected mentors attend the Train the Trainers Bootcamp at IIT Delhi from 14 to 19 June 2026, and accommodation on campus is provided for those dates. Remaining details are shared with you when you register." }
+        },
+        {
+          "@type": "Question",
+          "name": "What will I be mentoring?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Hardware-led student projects in or near your domain: a defined physical product taken from a written pitch to a working, exhibited unit. You guide; the student builds." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I really get a certificate?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every mentor who completes the programme receives a certificate of completion, co-signed by IIT Delhi CMF and Project GRID." }
+        },
+        {
+          "@type": "Question",
+          "name": "How are mentors matched to students?",
+          "acceptedAnswer": { "@type": "Answer", "text": "By domain. After you register, we aim to match you with students whose projects sit closest to your expertise, so your feedback is as useful as possible. Final matching is confirmed once the cohort is selected." }
+        },
+        {
+          "@type": "Question",
+          "name": "I have a question that isn't here.",
+          "acceptedAnswer": { "@type": "Answer", "text": "Email info@projectgrid.org and we'll help you out." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -270,8 +418,7 @@
       <a href="index.html#eligibility">Eligibility</a>
       <a href="#faq">FAQ</a>
       <a href="mentors.html" aria-current="page">Become a Mentor</a>
-      <!-- PLACEHOLDER: replace the href below with your Google Form link for mentor registration -->
-      <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-primary" href="#register">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
     </nav>
     <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
   </div>
@@ -296,8 +443,7 @@
     <h1 class="fx">Mentor the people building India's next <em>hardware</em>.</h1>
     <p class="sub fx">A selective mentor track, just fifteen places, for Masters, PhD and graduate researchers. Guide funded student builds, gain mentorship and exposure from Prof. Sunil Jha, Head of IIT Delhi's Central Manufacturing Facility, and earn a certificate of completion from IIT Delhi CMF and Project GRID.</p>
     <div class="hero-cta fx">
-      <!-- PLACEHOLDER: replace the href with your Google Form link -->
-      <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn btn-primary" href="#register">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" href="#role">See what mentors do</a>
     </div>
   </div>
@@ -322,7 +468,7 @@
       <div class="head">
         <span class="eyebrow reveal">What you're joining</span>
         <h2 class="reveal-mask"><span class="reveal-line">A funded programme that takes thirty students from idea to a real product.</span></h2>
-        <p class="lead reveal">InnovateX gives thirty Indian students the money, the workshop, and the audience to finish one hardware product each, built at IIT Delhi's Central Manufacturing Facility and exhibited on 19 September 2026. As a mentor, you help make sure they get there.</p>
+        <p class="lead reveal">InnovateX gives thirty Indian students the money, the workshop, and the audience to finish one hardware product each, built at IIT Delhi's Central Manufacturing Facility and exhibited in September 2026. As a mentor, you help make sure they get there.</p>
         <a class="btn btn-ghost reveal" href="index.html#programme" style="margin-top:24px">See the full programme <span class="arr" aria-hidden="true">→</span></a>
       </div>
       <div class="deflist-wrap">
@@ -351,6 +497,7 @@
         <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M14 3v5h5"/><path d="M7 3h7l5 5v11a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 14l2 2 3-3"/></svg></span><div><h3>A certificate from IIT Delhi CMF &amp; GRID</h3><p>Complete the programme and receive a certificate of completion, co-signed by IIT Delhi CMF and Project GRID.</p></div></li>
         <li><span class="fi"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></span><div><h3>A portfolio of guided builds</h3><p>Add real, finished hardware projects you helped shape to your academic and professional record.</p></div></li>
         <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M4 21h16M7 21v-5h10v5M9 16V8h6v8M5 8l7-5 7 5"/></svg></span><div><h3>Your work, on the exhibition floor</h3><p>The students you guide present their finished units before an audience from government, academia, and industry.</p></div></li>
+        <li><span class="fi"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M9 20v-6h6v6"/></svg></span><div><h3>On-campus bootcamp, stay included</h3><p>Train in person at IIT Delhi during the Train the Trainers Bootcamp, 14–19 June 2026, with accommodation on campus provided.</p></div></li>
       </ul>
     </div>
   </div>
@@ -361,12 +508,10 @@
   <div class="wrap">
     <div class="cmf-grid">
       <div class="cmf-media reveal">
-        <!-- PLACEHOLDER: drop a photo of Prof. Sunil Jha into assets/ and swap this .ph block for an <img> -->
-        <div class="ph cyan" style="min-height:380px;border-radius:20px">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0114 0"/></svg>
-          <span class="cap">Prof. Sunil Jha · photo</span>
+        <div class="cmf-photo">
+          <img src="assets/suniljha.png" alt="Prof. Sunil Jha, Head of CMF, IIT Delhi" width="342" height="414" loading="lazy" decoding="async">
         </div>
-        <div class="cmf-badge"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="80" height="30"><span>Head, Central Manufacturing<br>Facility · IIT Delhi</span></div>
+        <div class="cmf-badge"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="80" height="30"><span>Head of CMF Facility, IIT Delhi<br>Associate Dean (R&amp;D), IIT Delhi</span></div>
       </div>
       <div>
         <span class="eyebrow reveal">Who you'll learn from</span>
@@ -453,14 +598,18 @@
       <h2 class="reveal-mask"><span class="reveal-line">Where a mentor makes the difference.</span></h2>
       <p class="lead reveal">InnovateX runs in five phases between June and September 2026. These are the moments where a mentor's eye matters most. Your exact involvement is confirmed when you register.</p>
     </div>
+    <div class="bootcamp reveal">
+      <span class="bc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7M5 10v10h14V10M9 20v-6h6v6"/></svg></span>
+      <div><h3>Train the Trainers Bootcamp · <span class="bc-date">14–19 June 2026</span></h3><p>Selected mentors gather in person at IIT Delhi for a hands-on bootcamp before the build phase begins. Accommodation on campus is provided for the duration.</p></div>
+    </div>
     <div class="deflist-wrap" style="margin-top:42px;max-width:760px">
       <span class="spine" aria-hidden="true"></span>
       <ol class="deflist">
-        <li><span class="dn">01</span><div><h3>Pitch · from June</h3><p>Help judge whether an idea is real, genuinely new, and buildable.</p></div></li>
+        <li><span class="dn">01</span><div><h3>Pitch · 10–30 June</h3><p>Help judge whether an idea is real, genuinely new, and buildable.</p></div></li>
         <li><span class="dn">02</span><div><h3>Design · July</h3><p>Sanity-check 3D models, schematics, and PCB layouts before anything is ordered.</p></div></li>
         <li><span class="dn">03</span><div><h3>BOM · August</h3><p>Pressure-test the bill of materials for cost, feasibility, and a path to scale.</p></div></li>
         <li><span class="dn">04</span><div><h3>Build · August → September</h3><p>Answer technical questions as students assemble, debug, and calibrate.</p></div></li>
-        <li><span class="dn">05</span><div><h3>Exhibition · 19 September 2026</h3><p>The students you guided present their finished units at the InnovateX exhibition.</p></div></li>
+        <li><span class="dn">05</span><div><h3>Exhibition · Mid-September 2026</h3><p>The students you guided present their finished units at the InnovateX exhibition.</p></div></li>
       </ol>
     </div>
   </div>
@@ -475,6 +624,7 @@
       <div class="qa reveal"><button aria-expanded="false">What does the mentor role involve, and what's provided?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Full details of the role are being finalised and will be shared with you when you register. What is already confirmed: you receive mentorship and exposure from Prof. Sunil Jha and the CMF and GRID network, and a certificate of completion from IIT Delhi CMF and GRID.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">How much time does it take?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Mentoring follows the programme's five phases between June and September 2026, around the review points. The exact time commitment is confirmed when you register, and is designed to fit around graduate study and research.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">Do I need to be at IIT Delhi CMF?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Where and how mentoring happens is being finalised and will be shared on registration, so it's fine if you're not in Delhi. The student exhibition itself is hosted by IIT Delhi CMF.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Is there a bootcamp, and is accommodation provided?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Selected mentors attend the Train the Trainers Bootcamp at IIT Delhi from 14 to 19 June 2026, and accommodation on campus is provided for those dates. Remaining details are shared with you when you register.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">What will I be mentoring?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Hardware-led student projects in or near your domain: a defined physical product taken from a written pitch to a working, exhibited unit. You guide; the student builds.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">Do I really get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every mentor who completes the programme receives a certificate of completion, co-signed by IIT Delhi CMF and Project GRID.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">How are mentors matched to students?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>By domain. After you register, we aim to match you with students whose projects sit closest to your expertise, so your feedback is as useful as possible. Final matching is confirmed once the cohort is selected.</p></div></div>
@@ -487,14 +637,15 @@
 <section id="register" class="cta s-paper">
   <div class="wrap">
     <div class="cta-card reveal">
-      <span class="eyebrow">Mentor registration · open now</span>
+      <span class="eyebrow">Mentor registration · starts soon</span>
       <h2>Lend your expertise. Grow your own.</h2>
       <p class="lead">Register as an InnovateX mentor, guide a funded build, and earn a certificate of completion from IIT Delhi CMF and GRID.</p>
       <div class="hero-cta">
-        <!-- PLACEHOLDER: replace the href with your Google Form link -->
-        <a class="btn btn-primary" href="https://forms.gle/REPLACE-WITH-MENTOR-FORM" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+        <!-- When mentor registration opens, restore the form link: <a class="btn btn-primary" href="https://forms.gle/ojN2HMhWAPydUiBaA" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a> -->
+        <button type="button" class="btn btn-primary" id="mentorRegBtn" aria-describedby="mentorRegNotice">Register as a mentor <span class="arr" aria-hidden="true">→</span></button>
         <a class="btn btn-ghost" href="mailto:info@projectgrid.org?subject=InnovateX%20Mentor%20enquiry" style="color:#fff;border-color:rgba(255,255,255,.3)">Email info@projectgrid.org</a>
       </div>
+      <p class="reg-notice" id="mentorRegNotice" role="status" hidden>Mentor registration <b>starts soon</b>. Stay tuned!</p>
       <p class="help">Questions before you apply? Reach us at <a href="mailto:info@projectgrid.org">info@projectgrid.org</a>.</p>
     </div>
   </div>
@@ -513,9 +664,22 @@
           <span class="chip grid"><img src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="80" height="50" loading="lazy"></span>
         </div>
       </div>
-      <nav class="links" aria-label="Footer">
-        <a href="index.html#programme">Programme</a><a href="index.html#cmf">Where you build</a><a href="index.html#process">Phases</a><a href="index.html#eligibility">Eligibility</a><a href="#faq">Mentor FAQ</a><a href="mentors.html">Become a Mentor</a><a href="#register">Register</a>
-      </nav>
+      <div class="foot-right">
+        <nav class="links" aria-label="Footer">
+          <a href="index.html#programme">Programme</a><a href="index.html#cmf">Where you build</a><a href="index.html#process">Phases</a><a href="index.html#eligibility">Eligibility</a><a href="#faq">Mentor FAQ</a><a href="mentors.html">Become a Mentor</a><a href="#register">Register</a>
+        </nav>
+        <div class="foot-contact">
+          <h4>Contact us</h4>
+          <div class="contact-grid">
+            <div class="ct"><span class="nm">Sunil Jha</span><a href="mailto:suniljha@mech.iitd.ac.in">suniljha@mech.iitd.ac.in</a></div>
+            <div class="ct"><span class="nm">Sukriti Jha</span><a href="mailto:sukriti@projectgrid.org">sukriti@projectgrid.org</a></div>
+            <div class="ct"><span class="nm">Moksh Sindhwani</span><a href="mailto:founder@projectgrid.org">founder@projectgrid.org</a></div>
+            <div class="ct"><span class="nm">Tanishq Aggarwal</span><a href="mailto:founder@projectgrid.org">founder@projectgrid.org</a></div>
+            <div class="ct"><span class="nm">Rian Sanghi</span><a href="mailto:rian@projectgrid.org">rian@projectgrid.org</a></div>
+            <div class="ct"><span class="nm">Yash Varshney</span><a href="mailto:info@projectgrid.org">info@projectgrid.org</a></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="legal"><span>© 2026 Project GRID &amp; CMF, IIT Delhi</span><span>Innovation · Engineering · Impact</span></div>
   </div>
@@ -535,6 +699,10 @@
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
   toggle.addEventListener('click',function(){var o=links.classList.toggle('open');toggle.classList.toggle('on',o);toggle.setAttribute('aria-expanded',o);toggle.setAttribute('aria-label',o?'Close menu':'Open menu');});
   document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
+
+  /* mentor registration not open yet: show "starts soon" notice on click */
+  var mrb=document.getElementById('mentorRegBtn'),mrn=document.getElementById('mentorRegNotice');
+  if(mrb&&mrn){mrb.addEventListener('click',function(){mrn.hidden=false;requestAnimationFrame(function(){mrn.classList.add('show');});});}
 
   function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
 

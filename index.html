@@ -3,12 +3,27 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>InnovateX 2026: Build one real hardware product, funded · Project GRID × CMF, IIT Delhi</title>
-<meta name="description" content="InnovateX 2026: thirty Indian students each take one hardware product from concept to a working unit. Funded end to end, built at IIT Delhi's Central Manufacturing Facility, exhibited 19 September 2026." />
+<title>InnovateX 2026: Build one funded hardware product for Indian students · IIT Delhi CMF</title>
+<meta name="description" content="InnovateX 2026: a funded programme for Indian students (Grade 10 to final-year college) to build one real hardware or deep-tech product at IIT Delhi's CMF." />
+<meta name="keywords" content="InnovateX 2026, InnovateX, hardware programme for students, deep-tech, AI-powered hardware, robotics, electronics, embedded systems, student innovation opportunity, high school and college students, India, IIT Delhi CMF, Project GRID" />
 <meta property="og:title" content="InnovateX 2026: Build one real hardware product" />
-<meta property="og:description" content="Thirty students. One funded build each, made at IIT Delhi's CMF and exhibited 19 September 2026." />
+<meta property="og:description" content="Thirty students. One funded build each, made at IIT Delhi's CMF and exhibited September 2026." />
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://innovatex.projectgrid.org/" />
+<meta property="og:site_name" content="InnovateX 2026" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:image" content="https://innovatex.projectgrid.org/assets/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="InnovateX 2026 - build one funded hardware product at IIT Delhi's CMF" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="InnovateX 2026: Build one real hardware product" />
+<meta name="twitter:description" content="Thirty students. One funded build each, made at IIT Delhi's CMF and exhibited September 2026." />
+<meta name="twitter:image" content="https://innovatex.projectgrid.org/assets/og-image.jpg" />
+<meta name="theme-color" content="#13243A" />
+<link rel="canonical" href="https://innovatex.projectgrid.org/" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FFFFFF'/%3E%3Cline x1='24' y1='22' x2='78' y2='78' stroke='%2316273C' stroke-width='15'/%3E%3Cline x1='78' y1='22' x2='24' y2='78' stroke='%2316B6EA' stroke-width='15'/%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -56,7 +71,7 @@
   header.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;background:rgba(255,255,255,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s var(--standard),background .3s var(--standard)}
   header.nav.scrolled{border-bottom-color:var(--line);background:rgba(255,255,255,.93)}
   .nav .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
-  .nav .logo{font-size:1.22rem;min-height:44px}
+  .nav .logo{font-size:1.22rem}
   .navlinks{display:flex;align-items:center;gap:30px}
   .navlinks a:not(.btn){font-size:.88rem;font-weight:500;color:var(--ink-2);transition:color .15s var(--standard);padding:6px 0;position:relative}
   .navlinks a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--cyan);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--standard)}
@@ -167,7 +182,7 @@
 
   /* editorial deflist */
   .editorial{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-  .deflist{list-style:none;margin-top:6px}
+  .deflist{list-style:none;margin-top:6px;padding-left:22px}
   .deflist li{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;transition:transform .25s var(--standard)}
   .deflist li:hover{transform:translateX(4px)}
   .deflist li:first-child{border-top:0;padding-top:0}
@@ -197,7 +212,8 @@
   .pcard-top{display:flex;align-items:center;justify-content:space-between;padding:26px 28px 16px}
   .pcard .pn{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-deep);font-weight:700}
   .pcard .when{font-size:.78rem;color:var(--ink-3);font-weight:600}
-  .pcard-media{flex:1;margin:0 28px;border-radius:14px;min-height:120px}
+  .pcard-media{flex:1;margin:0 28px;border-radius:14px;min-height:120px;position:relative;overflow:hidden;background:var(--grey)}
+  .pcard-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
   .pcard-body{padding:22px 28px 28px}
   .pcard-body h3{font-size:1.5rem;margin-bottom:8px}
   .pcard-body p{color:var(--ink-2);font-size:.97rem}
@@ -233,11 +249,11 @@
   .ledger.yes li svg{stroke:var(--cyan-deep)} .ledger.no li svg{stroke:var(--ink-3)}
 
   /* 3 — requirements: editorial argument stack */
-  .req-stack{position:relative;padding-left:46px;margin:52px 0 0}
+  .req-stack{position:relative;--rqs-gutter:46px;padding-left:var(--rqs-gutter);margin:52px 0 0}
   .rqs-rail{position:absolute;left:6px;top:10px;width:2px;bottom:60px;background:var(--line);border-radius:2px;overflow:hidden}
   .rqs-fill{width:100%;height:100%;background:var(--cyan);transform-origin:top;transform:scaleY(1)}
   .rqs-row{position:relative;display:flex;align-items:flex-start;gap:20px;padding-bottom:34px}
-  .rqs-row::before{content:'';position:absolute;left:-40px;top:7px;width:14px;height:14px;border-radius:50%;border:2px solid var(--cyan);background:var(--cyan);z-index:1;transition:border-color .3s,background .3s}
+  .rqs-row::before{content:'';position:absolute;left:calc(var(--rqs-gutter) * -1);top:7px;width:14px;height:14px;border-radius:50%;border:2px solid var(--cyan);background:var(--cyan);z-index:1;transition:border-color .3s,background .3s}
   .rqs-content{flex:1;display:flex;align-items:flex-start;gap:14px}
   .rqs-n{font-size:.7rem;font-weight:800;letter-spacing:.07em;color:var(--cyan-deep);padding-top:3px;white-space:nowrap;min-width:18px}
   .rqs-h{font-size:1.04rem;font-weight:700;color:var(--navy);margin:0 0 4px}
@@ -289,6 +305,24 @@
   .exhibit .where{margin-top:16px;color:var(--cyan-bright);font-weight:600;letter-spacing:.04em}
   .exhibit p.lead{margin:22px auto 0;color:var(--t-d2);text-align:center}
 
+  /* KEY DATES timeline */
+  .tl-stack{position:relative;--tl-gutter:44px;padding-left:var(--tl-gutter);margin:50px 0 0;max-width:780px}
+  .tl-rail{position:absolute;left:6px;top:9px;bottom:30px;width:2px;background:var(--line);border-radius:2px;overflow:hidden}
+  .tl-fill{display:block;width:100%;height:100%;background:linear-gradient(var(--cyan-bright),var(--cyan));transform-origin:top center;transform:scaleY(1)}
+  .tl-row{position:relative;display:flex;align-items:flex-start;gap:22px;padding-bottom:30px}
+  .tl-row:last-child{padding-bottom:0}
+  .tl-row::before{content:"";position:absolute;left:calc(var(--tl-gutter) * -1);top:5px;width:14px;height:14px;border-radius:50%;border:2px solid var(--cyan);background:var(--cyan);z-index:1}
+  .tl-date{flex:none;min-width:122px;font-weight:800;color:var(--cyan-deep);font-size:1.02rem;letter-spacing:-.02em;padding-top:1px}
+  .tl-c h3{font-size:1.08rem;margin-bottom:4px}
+  .tl-c p{color:var(--ink-2);font-size:.96rem;max-width:48ch}
+  .tl-tag{display:inline-block;margin-left:9px;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan-deep);background:rgba(0,150,216,.08);border:1px solid rgba(0,150,216,.2);border-radius:100px;padding:3px 9px;vertical-align:middle}
+  @media(max-width:560px){ .tl-row{flex-direction:column;gap:4px} .tl-date{min-width:0} }
+
+  /* register notice */
+  .reg-notice{margin:22px auto 0;font-size:.96rem;color:#fff;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:11px 22px;display:inline-block;opacity:0;transform:translateY(6px);transition:opacity .35s var(--enter),transform .35s var(--enter)}
+  .reg-notice.show{opacity:1;transform:none}
+  .reg-notice b{color:#fff;font-weight:800}
+
   /* faq */
   .faq{max-width:840px;margin:0 auto}
   .qa{border-top:1px solid var(--line)}.qa:last-child{border-bottom:1px solid var(--line)}
@@ -316,8 +350,14 @@
   .foot p{font-size:.86rem;max-width:42ch;line-height:1.6;margin-top:10px}
   .foot .links{display:flex;gap:26px;flex-wrap:wrap}
   .foot .links a{font-size:.86rem;color:var(--ink-2);transition:color .15s}.foot .links a:hover{color:var(--navy)}
-  .foot-chips{display:flex;gap:11px;flex-wrap:wrap;margin-top:16px}
-  .foot-chips .chip{height:50px;padding:9px 15px}.foot-chips .chip img{height:28px}
+  .foot-chips{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px}
+  .foot-chips .chip{height:72px;padding:12px 20px}.foot-chips .chip img{height:44px}
+  .foot-right{display:flex;flex-direction:column;gap:30px;align-items:flex-start}
+  .foot-contact h4{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:16px}
+  .contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 44px}
+  .contact-grid .ct{display:flex;flex-direction:column;line-height:1.35}
+  .contact-grid .ct .nm{font-size:.86rem;font-weight:600;color:var(--navy)}
+  .contact-grid .ct a{font-size:.82rem;color:var(--ink-2);transition:color .15s}.contact-grid .ct a:hover{color:var(--cyan-deep)}
   .legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3);letter-spacing:.02em}
 
   /* ============ DIEGETIC STORY FIGURES ============ */
@@ -378,7 +418,7 @@
   @media(max-width:940px){
     .btrack .gates{grid-template-columns:1fr;gap:14px}
     .btrack .rail{display:none}
-    .req-stack{padding-left:32px}
+    .req-stack{--rqs-gutter:32px}
     .rqs-row{gap:12px}
     .rqs-vis{width:70px;height:44px}
     .hero{min-height:auto;padding:calc(var(--nav-h) + 48px) 0 56px}
@@ -416,6 +456,188 @@
     html{scroll-behavior:auto}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://innovatex.projectgrid.org/#website",
+      "url": "https://innovatex.projectgrid.org/",
+      "name": "InnovateX 2026",
+      "alternateName": "InnovateX",
+      "description": "InnovateX 2026: 30 Indian students each build one funded hardware product end to end at IIT Delhi's Central Manufacturing Facility.",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://projectgrid.org/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://innovatex.projectgrid.org/#webpage",
+      "url": "https://innovatex.projectgrid.org/",
+      "name": "InnovateX 2026: Build one real hardware product, funded",
+      "isPartOf": { "@id": "https://innovatex.projectgrid.org/#website" },
+      "about": { "@id": "https://innovatex.projectgrid.org/#event" },
+      "primaryImageOfPage": "https://innovatex.projectgrid.org/assets/og-image.jpg",
+      "keywords": "InnovateX 2026, hardware programme for students, deep-tech, AI-powered hardware, robotics, electronics, opportunity for high school and college students, India, IIT Delhi CMF",
+      "inLanguage": "en"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://cmf.iitd.ac.in/#organization",
+      "name": "Central Manufacturing Facility (CMF), IIT Delhi",
+      "alternateName": "IIT Delhi CMF",
+      "url": "https://cmf.iitd.ac.in",
+      "parentOrganization": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Technology Delhi",
+        "url": "https://home.iitd.ac.in"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "IIT Delhi, Hauz Khas",
+        "addressLocality": "New Delhi",
+        "postalCode": "110016",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://projectgrid.org/#organization",
+      "name": "Project GRID",
+      "url": "https://projectgrid.org",
+      "email": "info@projectgrid.org"
+    },
+    {
+      "@type": "Event",
+      "@id": "https://innovatex.projectgrid.org/#event",
+      "name": "InnovateX 2026",
+      "alternateName": "InnovateX",
+      "description": "A funded hardware and deep-tech programme in which 30 students across India each take one product from a written pitch to a working, exhibited unit, built at IIT Delhi's Central Manufacturing Facility. Open to Indian students from Grade 10 (high school) to the fourth year of college. Projects are hardware-led and may be AI-powered - robotics, electronics, embedded systems, instrumentation, or smart devices. No fee to apply or take part; 100% of the approved bill of materials is funded.",
+      "keywords": "hardware, deep-tech, robotics, electronics, embedded systems, AI-powered hardware, instrumentation, product design, student innovation, opportunity for high school and college students, India, IIT Delhi",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student",
+        "name": "Indian students from Grade 10 (high school) to the fourth year of college (undergraduate)"
+      },
+      "startDate": "2026-06-10",
+      "endDate": "2026-09-30",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "url": "https://innovatex.projectgrid.org/",
+      "image": "https://innovatex.projectgrid.org/assets/og-image.jpg",
+      "inLanguage": "en",
+      "location": {
+        "@type": "Place",
+        "name": "IIT Delhi - Central Manufacturing Facility (Central Atrium)",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "IIT Delhi, Hauz Khas",
+          "addressLocality": "New Delhi",
+          "postalCode": "110016",
+          "addressCountry": "IN"
+        }
+      },
+      "organizer": [
+        { "@id": "https://cmf.iitd.ac.in/#organization" },
+        { "@id": "https://projectgrid.org/#organization" }
+      ],
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "name": "Student application",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://forms.gle/ojN2HMhWAPydUiBaA",
+        "validFrom": "2026-06-10",
+        "eligibleRegion": { "@type": "Country", "name": "India" }
+      },
+      "subEvent": [
+        {
+          "@type": "Event",
+          "name": "Student applications open",
+          "description": "Registration opens; submit your product pitch.",
+          "startDate": "2026-06-10",
+          "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled"
+        },
+        {
+          "@type": "Event",
+          "name": "Train the Trainers Bootcamp",
+          "description": "Selected mentors train in person at IIT Delhi; on-campus accommodation provided.",
+          "startDate": "2026-06-14",
+          "endDate": "2026-06-19",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": { "@type": "Place", "name": "IIT Delhi", "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" } }
+        },
+        {
+          "@type": "Event",
+          "name": "Applications close",
+          "description": "Last day to submit your pitch for the 2026 cohort.",
+          "startDate": "2026-06-30",
+          "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled"
+        },
+        {
+          "@type": "Event",
+          "name": "Build phase",
+          "description": "Design, bill-of-materials approval, and build your unit at the CMF.",
+          "startDate": "2026-07-05",
+          "endDate": "2026-09-30",
+          "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled"
+        },
+        {
+          "@type": "Event",
+          "name": "Exhibition",
+          "description": "Present your finished product before government, academia, and industry at the Central Atrium, IIT Delhi.",
+          "startDate": "2026-09-15",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": { "@type": "Place", "name": "Central Atrium, IIT Delhi", "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" } }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://innovatex.projectgrid.org/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this a team event?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Every entry is by a single individual, and you cannot be listed on a second application within the same edition." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to study at, or travel to, IIT Delhi CMF?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. You design and build with your own resources, and may request supervised access to the Central Manufacturing Facility if your project needs equipment you lack. The final exhibition is held at the Central Atrium." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it a competition with winners?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. There is no ranking and no single winner. Every completed project is exhibited on equal terms. The value is tangible: a funded build, a finished product you own, a certificate, and a stage in front of people who can take it further." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost me?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Nothing to pitch or take part, and the programme funds your bill of materials. Personal travel, accommodation, and equipment you already own are not covered." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use AI tools?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, provided you disclose how you used them. You remain the author of the work and the capability behind it." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I get a certificate?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every participant who completes the programme receives a certificate and exhibits their finished product at the Central Atrium." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Skip to content</a>
@@ -427,6 +649,7 @@
       <a href="#programme">Programme</a>
       <a href="#cmf">Where you build</a>
       <a href="#process">Phases</a>
+      <a href="#dates">Dates</a>
       <a href="#eligibility">Eligibility</a>
       <a href="#faq">FAQ</a>
       <a href="mentors.html">Become a Mentor</a>
@@ -453,7 +676,7 @@
     </div>
     <div class="hero-logo fx"><span class="logo">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy lxa" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv lxb" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></span></div>
     <h1 class="fx">Turn your idea into a hardware product you can <em>hold</em>, funded start to finish.</h1>
-    <p class="sub fx">Thirty students. One real build each, made at IIT Delhi's Central Manufacturing Facility and exhibited on 19 September 2026.</p>
+    <p class="sub fx">Thirty students. One real build each, made at IIT Delhi's Central Manufacturing Facility and exhibited in September 2026.</p>
     <div class="hero-cta fx">
       <a class="btn btn-primary" href="#register">Register your pitch <span class="arr" aria-hidden="true">→</span></a>
       <a class="btn btn-ghost" href="#process">See the five phases</a>
@@ -542,7 +765,7 @@
     <div class="cmf-grid">
       <div class="cmf-media reveal">
         <div class="cmf-photo">
-          <img src="assets/cmf-C5ysMiRq.jpg" alt="Central Manufacturing Facility, IIT Delhi" loading="lazy" decoding="async">
+          <img src="assets/IMG_9663.jpg" alt="Central Manufacturing Facility, IIT Delhi" loading="lazy" decoding="async">
         </div>
         <div class="cmf-badge"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="CMF, IIT Delhi" width="80" height="30"><span>Central Manufacturing<br>Facility · IIT Delhi</span></div>
       </div>
@@ -565,8 +788,8 @@
   <div class="phases-head">
     <div class="wrap">
       <div class="head">
-        <span class="eyebrow reveal">How it works</span>
-        <h2 class="reveal-mask"><span class="reveal-line">Five phases. Scroll to lock each one in.</span></h2>
+        <span class="eyebrow reveal">How it works</span> 
+        <h2 class="reveal-mask"><span class="reveal-line">Five phases. The program.</span></h2>
         <p class="lead reveal">From your written pitch in June to a unit you exhibit in September.</p>
       </div>
     </div>
@@ -574,28 +797,28 @@
   <div class="phases-pin" id="phasesPin">
     <div class="phases-track" id="phasesTrack">
       <article class="pcard">
-        <div class="pcard-top"><span class="pn">Phase 01</span><span class="when">Rolling · from June</span></div>
-        <div class="ph pcard-media" data-cap="pitch"><svg viewBox="0 0 24 24"><path d="M14 3v5h5M14 3l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1zM8 13h8M8 17h5"/></svg><span class="cap">Your written pitch</span></div>
+        <div class="pcard-top"><span class="pn">Phase 01</span><span class="when">10–30 June</span></div>
+        <div class="pcard-media"><img src="assets/cmf-phase-1.jpg" alt="Waterjet cutting machine at IIT Delhi's Central Manufacturing Facility" width="1201" height="901" loading="lazy" decoding="async"></div>
         <div class="pcard-body"><h3>Pitch</h3><p>Submit your product, your build approach, and a scalability rationale. Reviewed until thirty are accepted.</p><ul class="deliv"><li>Product concept</li><li>Indicative BOM</li><li>Scalability</li></ul></div>
       </article>
       <article class="pcard">
         <div class="pcard-top"><span class="pn">Phase 02</span><span class="when">July</span></div>
-        <div class="ph pcard-media" data-cap="design"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l3-3 3 3 5-6"/><circle cx="7" cy="14" r="1"/></svg><span class="cap">CAD model &amp; schematic</span></div>
+        <div class="pcard-media"><img src="assets/cmf-phase-5.jpg" alt="Robotic welding cell and workshop floor at IIT Delhi's Central Manufacturing Facility" width="1201" height="901" loading="lazy" decoding="async"></div>
         <div class="pcard-body"><h3>Define &amp; design</h3><p>Produce a 3D model of the assembly, a schematic and PCB layout where applicable, and a line-itemised BOM.</p><ul class="deliv"><li>3D model</li><li>Schematic / PCB</li><li>Line-item BOM</li></ul></div>
       </article>
       <article class="pcard">
         <div class="pcard-top"><span class="pn">Phase 03</span><span class="when">August</span></div>
-        <div class="ph pcard-media" data-cap="bom"><svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M9 13l2 2 4-4"/></svg><span class="cap">Approved bill of materials</span></div>
+        <div class="pcard-media"><img src="assets/cmf-phase-3.jpg" alt="CNC turning and multi-axis milling machines at IIT Delhi's Central Manufacturing Facility" width="1201" height="901" loading="lazy" decoding="async"></div>
         <div class="pcard-body"><h3>BOM review &amp; procurement</h3><p>Your bill of materials is approved line by line. You procure against approved lines and are reimbursed against receipts.</p><span class="note">Written approval required to proceed</span></div>
       </article>
       <article class="pcard">
         <div class="pcard-top"><span class="pn">Phase 04</span><span class="when">August → September</span></div>
-        <div class="ph pcard-media" data-cap="build"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-.7-.7-2.5z"/></svg><span class="cap">Build timelapse</span></div>
+        <div class="pcard-media"><img src="assets/cmf-phase-4.jpg" alt="Wire-EDM machine at IIT Delhi's Central Manufacturing Facility" width="1201" height="901" loading="lazy" decoding="async"></div>
         <div class="pcard-body"><h3>Build</h3><p>Assemble, integrate, debug, calibrate, and finalise your unit, recorded through timelapse that evidences your authorship.</p><ul class="deliv"><li>Working unit</li><li>Timelapse</li><li>Calibration</li></ul></div>
       </article>
       <article class="pcard">
-        <div class="pcard-top"><span class="pn">Phase 05</span><span class="when">19 September 2026</span></div>
-        <div class="ph pcard-media" data-cap="exhibit"><svg viewBox="0 0 24 24"><path d="M4 21h16M7 21v-5h10v5M9 16V8h6v8M5 8l7-5 7 5"/></svg><span class="cap">Exhibition booth</span></div>
+        <div class="pcard-top"><span class="pn">Phase 05</span><span class="when">Mid-September 2026</span></div>
+        <div class="pcard-media"><img src="assets/cmf-phase-2.jpg" alt="Laser cutting machine at IIT Delhi's Central Manufacturing Facility" width="901" height="1201" loading="lazy" decoding="async"></div>
         <div class="pcard-body"><h3>Exhibition</h3><p>Present your finished product before government, academia, and industry, and answer questions on design and build.</p><ul class="deliv"><li>Live demo</li><li>Certificate</li><li>The room</li></ul></div>
       </article>
     </div>
@@ -604,6 +827,25 @@
         <span class="stp on">01 Pitch</span><span class="stp">02 Design</span><span class="stp">03 BOM</span><span class="stp">04 Build</span><span class="stp">05 Exhibit</span>
       </div>
       <div class="phases-prog"><span id="phasesProg"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY DATES -->
+<section id="dates" class="s-paper" aria-label="Key dates">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow reveal">Key dates</span>
+      <h2 class="reveal-mask"><span class="reveal-line">From application to exhibition.</span></h2>
+      <p class="lead reveal">One calendar, start to finish. Mark the dates that apply to you.</p>
+    </div>
+    <div class="tl-stack" id="timeline">
+      <div class="tl-rail" aria-hidden="true"><span class="tl-fill" id="tlFill"></span></div>
+      <div class="tl-row reveal"><span class="tl-date">10 June</span><div class="tl-c"><h3>Student applications open</h3><p>Registration opens. Submit your product pitch from this day.</p></div></div>
+      <div class="tl-row reveal"><span class="tl-date">14–19 June</span><div class="tl-c"><h3>Train the Trainers Bootcamp · IIT Delhi<span class="tl-tag">Mentors</span></h3><p>Selected mentors train in person at IIT Delhi. Accommodation on campus is provided.</p></div></div>
+      <div class="tl-row reveal"><span class="tl-date">30 June</span><div class="tl-c"><h3>Applications close</h3><p>The last day to submit your pitch for the 2026 cohort.</p></div></div>
+      <div class="tl-row reveal"><span class="tl-date">5 July → Sept</span><div class="tl-c"><h3>Build phase</h3><p>Design, BOM approval, and build your unit at the CMF.</p></div></div>
+      <div class="tl-row reveal"><span class="tl-date">Mid-Sept</span><div class="tl-c"><h3>Exhibition · IIT Delhi</h3><p>Present your finished product before government, academia, and industry.</p></div></div>
     </div>
   </div>
 </section>
@@ -747,8 +989,8 @@
   <div class="ov"></div>
   <div class="wrap">
     <span class="eyebrow reveal" style="color:var(--cyan-bright);justify-content:center">The finale</span>
-    <div class="date" style="margin-top:16px"><span class="dmask"><span class="dinner">19 September 2026</span></span></div>
-    <div class="where reveal">Binny Bansal Exhibition Hall</div>
+    <div class="date" style="margin-top:16px"><span class="dmask"><span class="dinner">September 2026</span></span></div>
+    <div class="where reveal">Central Atrium</div>
     <p class="lead reveal">Your finished product is exhibited on equal terms, no ranking, no winner, before an audience invited from government, academia, and industry.</p>
   </div>
 </section>
@@ -759,11 +1001,11 @@
     <div class="head" style="text-align:center;margin:0 auto 44px;max-width:560px"><span class="eyebrow reveal" style="justify-content:center">Questions, answered</span><h2 class="reveal" style="margin:14px auto 0">Frequently asked</h2></div>
     <div class="faq">
       <div class="qa reveal"><button aria-expanded="false">Is this a team event?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. Every entry is by a single individual, and you cannot be listed on a second application within the same edition.</p></div></div>
-      <div class="qa reveal"><button aria-expanded="false">Do I need to study at, or travel to, IIT Delhi CMF?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. You design and build with your own resources, and may request supervised access to the Central Manufacturing Facility if your project needs equipment you lack. The final exhibition is held at the Binny Bansal Exhibition Hall.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I need to study at, or travel to, IIT Delhi CMF?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. You design and build with your own resources, and may request supervised access to the Central Manufacturing Facility if your project needs equipment you lack. The final exhibition is held at the Central Atrium.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">Is it a competition with winners?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>No. There is no ranking and no single winner. Every completed project is exhibited on equal terms. The value is tangible: a funded build, a finished product you own, a certificate, and a stage in front of people who can take it further.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">What does it cost me?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Nothing to pitch or take part, and the programme funds your bill of materials. Personal travel, accommodation, and equipment you already own are not covered.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">Can I use AI tools?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes, provided you disclose how you used them. You remain the author of the work and the capability behind it.</p></div></div>
-      <div class="qa reveal"><button aria-expanded="false">Do I get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every participant who completes the programme receives a certificate and exhibits their finished product at the Binny Bansal Exhibition Hall.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">Do I get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every participant who completes the programme receives a certificate and exhibits their finished product at the Central Atrium.</p></div></div>
     </div>
   </div>
 </section>
@@ -772,13 +1014,14 @@
 <section id="register" class="cta s-paper">
   <div class="wrap">
     <div class="cta-card reveal">
-      <span class="eyebrow">Applications open · rolling review</span>
+      <span class="eyebrow">Applications open 10 June 2026</span>
       <h2>Pitch one product. Build it for real.</h2>
-      <p class="lead">Thirty places, funded from your concept to a working unit. If you are an Indian school or college student, register your pitch.</p>
+      <p class="lead">Thirty places, funded from your concept to a working unit. If you are an Indian school or college student, register your pitch when applications open.</p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="https://innovatex.iitd.ac.in" target="_blank" rel="noopener">Register your pitch <span class="arr" aria-hidden="true">→</span></a>
+        <button type="button" class="btn btn-primary" id="studentRegBtn" aria-describedby="regNotice">Register your pitch <span class="arr" aria-hidden="true">→</span></button>
         <a class="btn btn-ghost" href="#process" style="color:#fff;border-color:rgba(255,255,255,.3)">Review the phases first</a>
       </div>
+      <p class="reg-notice" id="regNotice" role="status" hidden>Applications open <b>10 June 2026</b>. Stay tuned!</p>
     </div>
   </div>
 </section>
@@ -792,13 +1035,21 @@
         <a class="logo" href="#top" aria-label="InnovateX home">INNOVATE<svg class="lx" viewBox="0 0 330 410" aria-hidden="true"><path class="cy" d="M13 12 L103 12 L211 205 L103 398 L13 398 L117 205 Z"/><path class="nv" d="M227 12 L318 12 L220 180 L179 105 Z M227 398 L318 398 L220 230 L179 305 Z"/></svg></a>
         <p>A hardware product development programme, co-organised by the Central Manufacturing Facility (IIT Delhi) and Project GRID.</p>
         <div class="foot-chips">
-          <span class="chip"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="IIT Delhi CMF (Central Manufacturing Facility)" width="120" height="50" loading="lazy"></span>
-          <span class="chip grid"><img src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="80" height="50" loading="lazy"></span>
+          <span class="chip"><a href="https://cmf.iitd.ac.in" target="_blank" rel="noopener"><img src="assets/CMF-Logo-CW4iBhSi.png" alt="IIT Delhi CMF (Central Manufacturing Facility)" width="120" height="50" loading="lazy"></a></span>
+          <span class="chip grid"><a href="https://projectgrid.org" target="_blank" rel="noopener"><img src="assets/GRID-logo-BYyGAV5o.png" alt="Project GRID" width="80" height="50" loading="lazy"></a></span>
         </div>
       </div>
-      <nav class="links" aria-label="Footer">
-        <a href="#programme">Programme</a><a href="#cmf">Where you build</a><a href="#process">Phases</a><a href="#eligibility">Eligibility</a><a href="#faq">FAQ</a><a href="mentors.html">Become a Mentor</a><a href="#register">Register</a>
-      </nav>
+      <div class="foot-right">
+        <nav class="links" aria-label="Footer">
+          <a href="#programme">Programme</a><a href="#cmf">Where you build</a><a href="#process">Phases</a><a href="#dates">Dates</a><a href="#eligibility">Eligibility</a><a href="#faq">FAQ</a><a href="mentors.html">Become a Mentor</a><a href="#register">Register</a>
+        </nav>
+        <div class="foot-contact">
+          <h4>Contact us</h4>
+          <div class="contact-grid">
+            <div class="ct"><span class="nm">Team InnovateX</span><a href="mailto:innovatex@projectgrid.org">innovatex@projectgrid.org</a></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="legal"><span>© 2026 Project GRID &amp; CMF, IIT Delhi</span><span>Innovation · Engineering · Impact</span></div>
   </div>
@@ -818,6 +1069,10 @@
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
   toggle.addEventListener('click',function(){var o=links.classList.toggle('open');toggle.classList.toggle('on',o);toggle.setAttribute('aria-expanded',o);toggle.setAttribute('aria-label',o?'Close menu':'Open menu');});
   document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
+
+  /* student registration not open yet: show "stay tuned" notice on click */
+  var srb=document.getElementById('studentRegBtn'),rn=document.getElementById('regNotice');
+  if(srb&&rn){srb.addEventListener('click',function(){rn.hidden=false;requestAnimationFrame(function(){rn.classList.add('show');});});}
 
   function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
 
@@ -962,6 +1217,13 @@
     }});
   })();
 
+  /* KEY DATES: rail fills as the section scrolls */
+  (function(){
+    var ts=document.getElementById('timeline'),fill=document.getElementById('tlFill'); if(!ts||!fill)return;
+    gsap.set(fill,{scaleY:0});
+    ScrollTrigger.create({trigger:ts,start:'top 80%',end:'bottom 62%',scrub:.7,onUpdate:function(self){gsap.set(fill,{scaleY:self.progress});}});
+  })();
+
   /* PHASES: pinned horizontal with slot-machine snap */
   var phasesSec=document.querySelector('.phases');
   var mm=gsap.matchMedia();
@@ -1002,7 +1264,7 @@
     var track=document.getElementById('phasesTrack'),pin=document.getElementById('phasesPin');
     var prog=document.getElementById('phasesProg'),steps=[].slice.call(document.querySelectorAll('#phasesSteps .stp'));
     var cards=[].slice.call(track.querySelectorAll('.pcard')),N=cards.length;
-    var dist=function(){ return track.scrollWidth - pin.clientWidth; };
+    var dist=function(){ return cards[N-1].offsetLeft - (pin.clientWidth - cards[N-1].offsetWidth)/2; };
     phasesSec.classList.add('snapping');
     function setActive(p){
       var idx=Math.round(p*(N-1));
