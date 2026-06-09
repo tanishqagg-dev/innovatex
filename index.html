@@ -1018,14 +1018,13 @@
 <section id="register" class="cta s-paper">
   <div class="wrap">
     <div class="cta-card reveal">
-      <span class="eyebrow">Applications open 10 June 2026</span>
+      <span class="eyebrow">Applications open now</span>
       <h2>Pitch one product. Build it for real.</h2>
-      <p class="lead">Thirty places, funded from your concept to a working unit. If you are an Indian school or college student, register your pitch when applications open.</p>
+      <p class="lead">Thirty places, funded from your concept to a working unit. If you are an Indian school or college student, register your pitch now.</p>
       <div class="hero-cta">
-        <button type="button" class="btn btn-primary" id="studentRegBtn" aria-describedby="regNotice">Register your pitch <span class="arr" aria-hidden="true">→</span></button>
+        <a class="btn btn-primary" href="https://forms.gle/cPoz5a9cCGTxWzts5" target="_blank" rel="noopener">Register your pitch <span class="arr" aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="#process" style="color:#fff;border-color:rgba(255,255,255,.3)">Review the phases first</a>
       </div>
-      <p class="reg-notice" id="regNotice" role="status" hidden>Applications open <b>10 June 2026</b>. Stay tuned!</p>
     </div>
   </div>
 </section>
@@ -1075,9 +1074,6 @@
   document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
 
   /* student registration not open yet: show "stay tuned" notice on click */
-  var srb=document.getElementById('studentRegBtn'),rn=document.getElementById('regNotice');
-  if(srb&&rn){srb.addEventListener('click',function(){rn.hidden=false;requestAnimationFrame(function(){rn.classList.add('show');});});}
-
   function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
 
   if(reduce||!hasGSAP){

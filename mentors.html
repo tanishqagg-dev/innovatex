@@ -331,7 +331,7 @@
       "@id": "https://projectgrid.org/#organization",
       "name": "Project GRID",
       "url": "https://projectgrid.org",
-      "email": "info@projectgrid.org"
+      "email": "innovatex@projectgrid.org"
     },
     {
       "@type": "Person",
@@ -398,7 +398,7 @@
         {
           "@type": "Question",
           "name": "I have a question that isn't here.",
-          "acceptedAnswer": { "@type": "Answer", "text": "Email info@projectgrid.org and we'll help you out." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Email innovatex@projectgrid.org and we'll help you out." }
         }
       ]
     }
@@ -629,7 +629,7 @@
       <div class="qa reveal"><button aria-expanded="false">What will I be mentoring?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Hardware-led student projects in or near your domain: a defined physical product taken from a written pitch to a working, exhibited unit. You guide; the student builds.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">Do I really get a certificate?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Yes. Every mentor who completes the programme receives a certificate of completion, co-signed by IIT Delhi CMF and Project GRID.</p></div></div>
       <div class="qa reveal"><button aria-expanded="false">How are mentors matched to students?<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>By domain. After you register, we aim to match you with students whose projects sit closest to your expertise, so your feedback is as useful as possible. Final matching is confirmed once the cohort is selected.</p></div></div>
-      <div class="qa reveal"><button aria-expanded="false">I have a question that isn't here.<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Email <a href="mailto:info@projectgrid.org" style="color:var(--cyan-deep);font-weight:600">info@projectgrid.org</a> and we'll help you out.</p></div></div>
+      <div class="qa reveal"><button aria-expanded="false">I have a question that isn't here.<span class="pm" aria-hidden="true"></span></button><div class="ans"><p>Email <a href="mailto:innovatex@projectgrid.org" style="color:var(--cyan-deep);font-weight:600">innovatex@projectgrid.org</a> and we'll help you out.</p></div></div>
     </div>
   </div>
 </section>
@@ -638,16 +638,14 @@
 <section id="register" class="cta s-paper">
   <div class="wrap">
     <div class="cta-card reveal">
-      <span class="eyebrow">Mentor registration · starts soon</span>
+      <span class="eyebrow">Mentor registration · open now</span>
       <h2>Lend your expertise. Grow your own.</h2>
       <p class="lead">Register as an InnovateX mentor, guide a funded build, and earn a certificate of completion from IIT Delhi CMF and GRID.</p>
       <div class="hero-cta">
-        <!-- When mentor registration opens, restore the form link: <a class="btn btn-primary" href="https://forms.gle/ojN2HMhWAPydUiBaA" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a> -->
-        <button type="button" class="btn btn-primary" id="mentorRegBtn" aria-describedby="mentorRegNotice">Register as a mentor <span class="arr" aria-hidden="true">→</span></button>
-        <a class="btn btn-ghost" href="mailto:info@projectgrid.org?subject=InnovateX%20Mentor%20enquiry" style="color:#fff;border-color:rgba(255,255,255,.3)">Email info@projectgrid.org</a>
+        <a class="btn btn-primary" href="https://forms.gle/5YyT39RQMo4H4MvT9" target="_blank" rel="noopener">Register as a mentor <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="mailto:innovatex@projectgrid.org?subject=InnovateX%20Mentor%20enquiry" style="color:#fff;border-color:rgba(255,255,255,.3)">Email innovatex@projectgrid.org</a>
       </div>
-      <p class="reg-notice" id="mentorRegNotice" role="status" hidden>Mentor registration <b>starts soon</b>. Stay tuned!</p>
-      <p class="help">Questions before you apply? Reach us at <a href="mailto:info@projectgrid.org">info@projectgrid.org</a>.</p>
+      <p class="help">Questions before you apply? Reach us at <a href="mailto:innovatex@projectgrid.org">innovatex@projectgrid.org</a>.</p>
     </div>
   </div>
 </section>
@@ -672,12 +670,7 @@
         <div class="foot-contact">
           <h4>Contact us</h4>
           <div class="contact-grid">
-            <div class="ct"><span class="nm">Sunil Jha</span><a href="mailto:suniljha@mech.iitd.ac.in">suniljha@mech.iitd.ac.in</a></div>
-            <div class="ct"><span class="nm">Sukriti Jha</span><a href="mailto:sukriti@projectgrid.org">sukriti@projectgrid.org</a></div>
-            <div class="ct"><span class="nm">Moksh Sindhwani</span><a href="mailto:founder@projectgrid.org">founder@projectgrid.org</a></div>
-            <div class="ct"><span class="nm">Tanishq Aggarwal</span><a href="mailto:founder@projectgrid.org">founder@projectgrid.org</a></div>
-            <div class="ct"><span class="nm">Rian Sanghi</span><a href="mailto:rian@projectgrid.org">rian@projectgrid.org</a></div>
-            <div class="ct"><span class="nm">Yash Varshney</span><a href="mailto:info@projectgrid.org">info@projectgrid.org</a></div>
+            <div class="ct"><span class="nm">Team InnovateX</span><a href="mailto:innovatex@projectgrid.org">innovatex@projectgrid.org</a></div>
           </div>
         </div>
       </div>
@@ -702,9 +695,6 @@
   document.querySelectorAll('.qa').forEach(function(qa){var b=qa.querySelector('button'),a=qa.querySelector('.ans');b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));a.style.maxHeight=o?'0px':(a.scrollHeight+'px');});});
 
   /* mentor registration not open yet: show "starts soon" notice on click */
-  var mrb=document.getElementById('mentorRegBtn'),mrn=document.getElementById('mentorRegNotice');
-  if(mrb&&mrn){mrb.addEventListener('click',function(){mrn.hidden=false;requestAnimationFrame(function(){mrn.classList.add('show');});});}
-
   function instantCount(){document.querySelectorAll('[data-count]').forEach(function(el){el.textContent=el.getAttribute('data-count')+(el.getAttribute('data-suffix')||'');});}
 
   if(reduce||!hasGSAP){
